@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>pro_iat</title>
+		  <script type="text/javascript" src="jspsych-6.0.5/jspsych.js"></script>
+		  <link rel="stylesheet" type="text/css" href="jspsych-6.0.5/css/jspsych.css"/>
+
+		  <script type="text/javascript" src="jspsych-6.0.5/plugins/jspsych-instructions.js"></script>
+		  <script type="text/javascript" src="jspsych-6.0.5/plugins/jspsych-iat-image_ds.js"></script>
+		  <script type="text/javascript" src="jspsych-6.0.5/plugins/jspsych-iat-html_ds.js"></script>
+		<script src="jspsych-6.0.5/plugins/jspsych-html-keyboard-response.js"></script>
+  
+		  <script type="text/javascript" src="lib/vendors/jquery-2.2.0.min.js"></script>
+		  <!-- <script type="text/javascript" src="lib/jspsych-pavlovia-3.0.0.js"></script> -->
+  		<script type="text/javascript" src="lib/jspsych-pavlovia-3.1.0.js"></script>
+<style>
+	* {
+		cursor: none;
+	}
+</style>
+
+	</head>
+	<body></body>
+	<script>
+
+		// **********SOME NOTES:**********
+		// This program uses URL variables to set a number of variables and control the experiment ordering. To assign values to URL
+		// variables, you append the normal URL (whether online or locally) with a '?' and then each variable assignement separated
+		// by an '&' symbol.  The URL that would run the default parameters (i.e. what happens if you just use the base URL) is as
+		// follows:
+		//
+		// http://www.examplewebsite.com/index.html?SID=testing&PAV=0&currTsk=1&IATHAND=wCAL&IATCOND=CONG
+		//
+		// Descriptions of the variables follow
+
+		// **********URL VARIABLE DESCRIPTIONS AND DEFAULTS**********
+		// The Subject ID is specified by SID variable. The default is 'testing'
+		//
+		// The default is for this program to run on the Pavlovia.org server - if you wish to run it locally, you need to define
+		// the PAV variable in the URL.  
+
+		// PAV=0 sets the program to run locally.
+		// PAV=1 sets the program to run on Pavlovia.org. This is the default
+		//
+		// The currTsk variable allows you to specify where this particular task lies in the chain of tasks you may be completing.
+		// The default value is 1. This will gain more functionality in future revisions.
+		//
+		// To control which set of words (cat A or cat B) are assigned to which hand at the beginning, you need to define the IATHAND
+		// variable in the URL.
+		// IH=wCAL sets word catecory A to start on the lefthand side of the screen. This is the default.
+		// IH=wCAR sets word catecory A to start on the righthand side of the screen.
+		//
+		// To control whether the program starts with the congruent or incongruent condition, you need to definr the IATCOND variable
+		// in the URL.
+		// IC=CONG sets the program to start with the congruent condition. This is the default.
+		// IC=INCO sets the program to start with the incongruent condition.
+		
+
+		// IAT SPECIFIC DEFINITIONS
+		var task='pro_iat'; // set the name of the task.
+		var compCode='cvd19@accy!#8';
+		
+
+		// Set the catergories for sorting (note that these willl be the labels used)
+		// NOTE THE PROGRAM ASSUMES THAT wordCatA-cncptCatA and wordCatB-cncptCatB are the congruent associations.
+		var wordCatA='ME';
+		var wordCatB='THEY';
+		var cncptCatA='SERVICE';
+		var cncptCatB='PROFIT';
+
+		// Specify the specific stimuli - relatvie paths are used for images.
+		var catAWordList = [
+			'I',
+			'Me',
+			'Myself',
+			'Mine'
+		];
+
+		var catBWordList = [
+			'They',
+			'Them',
+			'Their',
+			'Theirs'
+		];
+
+		var cncptAList = [
+			'Compassion',
+			'Sacrifice',
+			'Duty',
+			'Give',
+			'Helping'
+		];
+
+		var cncptBList = [
+			'Gain',
+			'Win',
+			'Money',
+			'Take',
+			'Capitalize'
+		];
+
+		// Specify the number of trials in each block. The default is taken from Lane et al, 2007
+		var blockNumTrials=[20,20,20,40,40,20,40];
+
+
+		// Because of dependencies in the Instructions, I take care of url handling early on - but it shouldn't need editing
+		var urlvar = jsPsych.data.urlVariables();
+
+		// assumes followup task variables are passed in a string with following tags (*t# to indicate new task with a number, *a to indicate &, *e to indicate =)
+		if(typeof urlvar.FTV == 'undefined'){
+			var FTV="";
+		}else{
+			var FTV = urlvar.FTV;
+		};		
+		if(typeof urlvar.SID == 'undefined'){
+			var sid="testing";
+		}else{
+			var sid = urlvar.SID;
+		}
+		if(typeof urlvar.PAV == 'undefined'){
+			var pav = 1;
+		}else{
+			var pav = urlvar.PAV;
+		}
+		if(typeof urlvar.CT == 'undefined'){  //assumes currTask is in format 1o3
+			var currTsk='1';
+			var numTsks='1';			
+		}else{
+			var currTsk = urlvar.CT[0];
+			var numTsks = urlvar.CT[2];
+		};
+		if(typeof urlvar.IH == 'undefined'){
+			urlvar.IH='wCAL';
+		}
+		if(typeof urlvar.IC == 'undefined'){
+			urlvar.IC='CONG';
+		}
+		
+		switch(urlvar.IH){
+		case "wCAL":
+			var wAhInit=['left','right'];
+			var wLabels=[wordCatA,wordCatB];
+			var iathand=['wCAL', 'wCAR'];
+		    break;
+		case "wCAR": 
+			var wAhInit=['right','left'];
+			var wLabels=[wordCatB,wordCatA];
+			var iathand=['wCAR', 'wCAL'];
+		    break;
+		    default: ;
+		    break;
+		};
+		switch(urlvar.IC){
+		case "CONG":
+			var cncptAhInit=[wAhInit[0],wAhInit[1]];
+			if (wAhInit[0]=='left') {
+				var cLabels=['<span style="color:green">'+cncptCatA+'</span>','<span style="color:green">'+cncptCatB+'</span>'];
+			} else {
+				var cLabels=['<span style="color:green">'+cncptCatB+'</span>','<span style="color:green">'+cncptCatA+'</span>'];				
+			};
+			var iatcond=['CONG','INCO'];
+		    break;
+		case "INCO":
+			var cncptAhInit=[wAhInit[1],wAhInit[0]];
+			if (wAhInit[0]=='left') {
+				var cLabels=['<span style="color:green">'+cncptCatB+'</span>','<span style="color:green">'+cncptCatA+'</span>'];
+			} else {
+				var cLabels=['<span style="color:green">'+cncptCatA+'</span>','<span style="color:green">'+cncptCatB+'</span>'];				
+			};
+			var iatcond=['INCO','CONG'];
+		    break;
+		    default: ;
+		    break;
+		};		
+	
+		// Specify the particular instructions.  Currently this is not adaptive in that it needs to be edited so that it accurately reflects the 
+		// categories and examples - though in the future I hope to make it automatically incorporate the definitions from above.
+		var welcome = { //This is the welcome block of instructions as well as the lead in to Block 1.
+			type: "instructions",
+			pages: ["<div style='text-align:left'><p>In this task, you will be presented with a set of words or images to classify into groups."+
+			" This task requires that you classify items <strong>as quickly as you can</strong> while making as few mistakes as possible."+
+			" Going too slow or making too many mistakes will result in an uninterpretable score."+
+			" This part of the study will take about 5 minutes. The following is a list of category labels and "+
+			"the items that belong to each of those categories.</p>"+
+			
+			"<table border='1'><tr><td><b>Category</b></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><b>Items</b></td></tr>"+
+			// "<tr><td>Homeless Images:</td>"+"<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>Pictures of individuals who are Homeless</td>"+
+			// "<tr><td>Not Homeless Images:</td>"+"<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>Pictures of individuals who are not Homeless</td>"+
+			"<tr><td>Me-related Words:</td>"+"<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>"+
+	
+				"<td>I, Me, Myself, Mine</td>"+
+
+			"<tr><td>They-related Words:</td>"+"<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>"+
+
+				"<td>They, Them, Their, Theirs</td>"+
+
+			"<tr><td>Service-related Words:</td>"+"<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>"+
+
+				"<td>Compassion, Sacrifice, Duty, Give, Helping</td>"+
+
+			"<tr><td>Profit-related Words:</td>"+"<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>"+
+
+				"<td>Gain, Win, Money, Take, Capitalize</td></table>"+
+
+			"<p>Keep in mind:</p><ul>"+
+			"<li>Keep your index fingers on the 'e' and 'i' keys to enable rapid response.</li>"+
+			"<li>Two labels at the top will tell you which words or images go with each key.</li>"+
+			"<li>Each word or image has a correct classification. Most of these are easy.</li>"+
+			"<li>The test gives no results if you go slow -- Please try to go as fast as possible.</li>"+
+			"<li>Expect to make a few mistakes because of going fast. That's OK.</li>"+
+			"<li>For best results, avoid distractions and stay focused.</li></ul></div>"+'<p>Press the SPACEBAR to continue, B to go back.</p>',
+			
+			"<div id='trial_left_align' style='position: absolute; top: 18%; left: 20%'>"+"<p>Press E for:<br>"+
+			wLabels[0].bold()+"</p></div>"+
+
+			"<div id='trial_right_align' style='position: absolute; top: 18%; right: 20%'>"+"<p>Press I for:<br>"+
+			wLabels[1].bold()+"</p></div>"+
+			
+			"<div style='text-align:left; position: absolute; top: 40%; left: 10%; right: 10%'>Put your left index finger on the <b>E</b> key and your right index finger on the <b>I</b> key of your keyboard. "+
+			"<p>Words or images representing the categories at the top will appear one-by-one in the "+
+			"middle of the screen. When the item belongs to a category on the left, press the <b>E</b> "+
+			"key; when the item belongs to a category on the right, press the <b>I</b> key.  Items "+
+			"belong to only one category.  If you make an error, an <font color=red>X</font> "+
+			"will appear - fix the error by hitting the other key.</p>"+
+			"<p>This is a timed sorting task. <b>GO AS FAST AS YOU CAN</b> while making as few "+
+			"mistakes as possible. Going too slow or making too many errors will result in an "+
+			"uninterpretable score. This task will take about 5 minutes to complete.</p>"+
+			"<p style='text-align:center'>Press the <b>SPACEBAR</b> to begin, B to go back.</p></div>"],
+			key_forward: [32],
+			key_backward: [66],
+			on_start: function (trial){
+				if (currTsk==1 && currTsk==numTsks){
+					trial.pages.unshift("<p>Welcome to the experiment!</p><p>Please put your browser into fullscreen mode. This experiment "+
+					"requires your full attention, we ask that you make sure you will have no distractions over the next 5 minutes.</p>" +
+					"<p>Thank you for being a part of our research."+'<p>Press the SPACEBAR to continue</p>');
+				}else{
+					trial.pages.unshift("<p>Welcome to task "+currTsk+" of "+numTsks+"!</p><p>As a reminder, this experiment "+
+					"requires your full attention, we ask that you make sure you will have no distractions while completing it.</p>" +
+					"<p><em><strong>NOTE: In some cases this task may be similar to the last. PLEASE READ ALL INSTRUCTIONS as some things will have changed</strong></em></p>"+
+					"<p>Thank you for being a part of our research."+'<p>Press the SPACEBAR to continue</p>');
+				};
+			} 
+		};
+
+		var b2Instrux = {  //Specific Instructions for Block 2
+			type: "instructions",
+			pages: ["<div id='trial_left_align' style='position: absolute; top: 18%; left: 20%'><p>Press E for:<br>"+
+			cLabels[0].bold()+"</p></div>"+
+
+			"<div id='trial_right_align' style='position: absolute; top: 18%; right: 20%'><p>Press I for:<br>"+
+			cLabels[1].bold()+"</p></div>"+
+			
+			"<div style='text-align:left; position: absolute; top: 40%; left: 10%; right: 10%'>"+
+			"<p><b>See above, the categories have changed.</b>  The items for sorting have changed as well.  "+
+			"The rules, however, are the same.</p><p>When the items belong to a category on the left press the <b>E</b> key; "+
+			"when the item belongs to a category on the right, press the <b>I</b> key.  "+
+			"Items belong to only one category.  An <font color=red>X</font> appears after an "+
+			"error - fix the error by hitting the other key.  <b>GO AS FAST AS YOU CAN.</b></p>"+
+			"<p style='text-align:center'>Press the <b>SPACEBAR</b> to continue.</p></div>"],
+			key_forward: [32],
+			key_backward: [jsPsych.NO_KEYS] 
+		};
+
+		var b3Instrux = {  //Specific Instructions for Block 3
+			type: "instructions",
+			pages: ["<div id='trial_left_align' style='position: absolute; top: 18%; left: 20%'><p>Press E for:<br>"+
+			cLabels[0].bold()+ "<br>" + "or<br>" +wLabels[0].bold()+"</p></div>"+
+
+			"<div id='trial_right_align' style='position: absolute; top: 18%; right: 20%'><p>Press I for:<br>"+
+			cLabels[1].bold()+ "<br>" + "or<br>" +wLabels[1].bold()+"</p></div>"+
+			
+			"<div style='text-align:left; position: absolute; top: 40%; left: 10%; right: 10%'>"+
+			"<p><b>See above, the four categories you saw separately now appear together.</b> "+
+			"Remember, each item belongs to only one group. For example, if the categories "+
+			"<b>Service</b> and <b>Me</b> appeared on separate sides above - words related to "+
+			"<b>Service</b> would go in the <b>Service</b> category, not the "+
+			"<b>Me</b> category.</p>"+
+			"<p>The <font color=green>green</font> and <b>black</b> labels and items may help to "+
+			"identify the appropriate category.  Use the <b>E</b> and <b>I</b> keys to categorize items "+
+			"into the four groups <b>left</b> and <b>right</b>, and correct errors by hitting the other key.</p>"+
+			"<p style='text-align:center'>Press the <b>SPACEBAR</b> to continue.</p></div>"],
+			key_forward: [32],
+			key_backward: [jsPsych.NO_KEYS] 
+		};
+
+		var b4Instrux = {  //Specific Instructions for Block 4
+			type: "instructions",
+			pages: ["<div id='trial_left_align' style='position: absolute; top: 18%; left: 20%'><p>Press E for:<br>"+
+			cLabels[0].bold()+ "<br>" + "or<br>" +wLabels[0].bold()+"</p></div>"+
+
+			"<div id='trial_right_align' style='position: absolute; top: 18%; right: 20%'><p>Press I for:<br>"+
+			cLabels[1].bold()+ "<br>" + "or<br>" +wLabels[1].bold()+"</p></div>"+
+			
+			"<div style='text-align:left; position: absolute; top: 40%; left: 10%; right: 10%'>"+
+			"<p><b>Sort the same four categories again</b> "+
+			"Remember to go as fast as you can while making as few mistakes as possible.</p>"+
+			"<p>The <font color=green>green</font> and <b>black</b> labels and items may help to "+
+			"identify the appropriate category.  Use the <b>E</b> and <b>I</b> keys to categorize items "+
+			"into the four groups <b>left</b> and <b>right</b>, and correct errors by hitting the other key.</p>"+
+			"<p style='text-align:center'>Press the <b>SPACEBAR</b> to continue.</p></div>"],
+			key_forward: [32],
+			key_backward: [jsPsych.NO_KEYS] 
+		};
+
+		var b5Instrux = {  //Specific Instructions for Block 5
+			type: "instructions",
+			pages: ["<div id='trial_left_align' style='position: absolute; top: 18%; left: 20%'>"+"<p>Press E for:<br>"+
+			wLabels[1].bold()+"</p></div>"+
+
+			"<div id='trial_right_align' style='position: absolute; top: 18%; right: 20%'>"+"<p>Press I for:<br>"+
+			wLabels[0].bold()+"</p></div>"+
+			
+			"<div style='text-align:left; position: absolute; top: 40%; left: 10%; right: 10%'>Put your left index finger on the <b>E</b> key and your right index finger on the <b>I</b> key of your keyboard. "+
+			"<p><b>Notice above, there are only two categories and they have switched positions.</b> "+
+			"The concept that was previously on the left is now on the right, and the concept that was "+
+			"on the right is now on the left.  Practice this new configuration.</p>"+
+			"<p>Use the <b>E</b> and <b>I</b> keys to categorize items left and right, and correct errors by hitting the other key.</p>"+
+			"<p style='text-align:center'>Press the <b>SPACEBAR</b> to continue.</p></div>"],
+			key_forward: [32],
+			key_backward: [jsPsych.NO_KEYS] 
+		};
+
+		var b6Instrux = {  //Specific Instructions for Block 6
+			type: "instructions",
+			pages: ["<div id='trial_left_align' style='position: absolute; top: 18%; left: 20%'><p>Press E for:<br>"+
+			cLabels[0].bold()+ "<br>" + "or<br>" +wLabels[1].bold()+"</p></div>"+
+
+			"<div id='trial_right_align' style='position: absolute; top: 18%; right: 20%'><p>Press I for:<br>"+
+			cLabels[1].bold()+ "<br>" + "or<br>" +wLabels[0].bold()+"</p></div>"+
+			
+			"<div style='text-align:left; position: absolute; top: 40%; left: 10%; right: 10%'>"+
+			"<p><b>See above, the four categories now appear together in a new configuration.</b> "+
+			"Remember, each item belongs to only one group. </p>"+
+			"<p>The <font color=green>green</font> and <b>black</b> labels and items may help to "+
+			"identify the appropriate category.  Use the <b>E</b> and <b>I</b> keys to categorize items "+
+			"into the four groups <b>left</b> and <b>right</b>, and correct errors by hitting the other key.</p>"+
+			'<p style="text-align:center">Press the <b>SPACEBAR</b> to continue.</p></div>'],
+			key_forward: [32],
+			key_backward: [jsPsych.NO_KEYS]
+		};
+
+		var b7Instrux = {  //Specific Instructions for Block 7
+			type: "instructions",
+			pages: ["<div id='trial_left_align' style='position: absolute; top: 18%; left: 20%'><p>Press E for:<br>"+
+			cLabels[0].bold()+ "<br>" + "or<br>" +wLabels[1].bold()+"</p></div>"+
+
+			"<div id='trial_right_align' style='position: absolute; top: 18%; right: 20%'><p>Press I for:<br>"+
+			cLabels[1].bold()+ "<br>" + "or<br>" +wLabels[0].bold()+"</p></div>"+
+			
+			"<div style='text-align:left; position: absolute; top: 40%; left: 10%; right: 10%'>"+
+			"<p><b>Sort the same four categories again</b> "+
+			"Remember to go as fast as you can while making as few mistakes as possible.</p>"+
+			"<p>The <font color=green>green</font> and <b>black</b> labels and items may help to "+
+			"identify the appropriate category.  Use the <b>E</b> and <b>I</b> keys to categorize items "+
+			"into the four groups <b>left</b> and <b>right</b>, and correct errors by hitting the other key.</p>"+
+			"<p style='text-align:center'>Press the <b>SPACEBAR</b> to continue.</p></div>"],
+			key_forward: [32],
+			key_backward: [jsPsych.NO_KEYS] 
+		};
+
+
+		// *****************************************************************************************
+		// NOTHING BELOW THIS LINE SHOULD NEED TO BE USER DEFINED.
+		// GRAB THE URL VARIABLES
+
+		var cncptCatATrials = [];
+		for (i=0; i<cncptAList.length; i++){
+			cncptCatATrials = cncptCatATrials.concat({type: 'iat-html', stimulus: cncptAList[i], stim_key_association: cncptAhInit[0]});
+		};
+		var cncptCatBTrials = [];
+		for (i=0; i<cncptBList.length; i++){
+			cncptCatBTrials = cncptCatBTrials.concat({type: 'iat-html', stimulus: cncptBList[i], stim_key_association: cncptAhInit[1]});
+		};
+		
+		var wCatATrials = [];
+		for (i=0; i<catAWordList.length; i++){
+			wCatATrials = wCatATrials.concat({type: 'iat-html', stimulus: catAWordList[i], stim_key_association: wAhInit[0]});
+		};
+		var wCatBTrials = [];
+		for (i=0; i<catBWordList.length; i++){
+			wCatBTrials = wCatBTrials.concat({type: 'iat-html', stimulus: catBWordList[i], stim_key_association: wAhInit[1]});
+		};	
+
+		var wCatATrials2 = [];
+		for (i=0; i<catAWordList.length; i++){
+			wCatATrials2 = wCatATrials2.concat({type: 'iat-html', stimulus: catAWordList[i], stim_key_association: wAhInit[1]});
+		};
+		var wCatBTrials2 = [];
+		for (i=0; i<catBWordList.length; i++){
+			wCatBTrials2 = wCatBTrials2.concat({type: 'iat-html', stimulus: catBWordList[i], stim_key_association: wAhInit[0]});
+		};	
+	
+		
+		// var imgsToPreload=cncptAList.concat(cncptBList);
+
+
+		function genList (catA, catB, lengthA) {
+			var list = [];
+			if (catA.length+catB.length>lengthA){
+				list = jsPsych.randomization.shuffleNoRepeats(jsPsych.randomization.shuffleNoRepeats(
+					catA).slice(0,lengthA/2).concat(jsPsych.randomization.shuffleNoRepeats(
+					catB).slice(0,lengthA/2)));			
+			} else if (catA.length+catB.length==lengthA){
+				list = jsPsych.randomization.shuffleNoRepeats(catA.concat(catB));			
+			} else {
+				var tmpAL=catA; var tmpBL=catB; 
+				while (tmpAL.length<lengthA/2) {
+					tmpAL=tmpAL.concat(jsPsych.randomization.shuffleNoRepeats(catA));
+					tmpBL=tmpBL.concat(jsPsych.randomization.shuffleNoRepeats(catB));
+				};
+				list = jsPsych.randomization.shuffleNoRepeats(tmpAL.slice(0,lengthA/2).concat(
+					tmpBL.slice(0,lengthA/2)));
+			};
+			return list;	
+		};
+
+		//CREATE BLOCK 1 TRIAL LIST - WORDS				
+		var	block1WordL = genList(wCatATrials, wCatBTrials, blockNumTrials[0]);
+
+		//CREATE BLOCK 2 TRIAL LIST - IMAGES							
+		var	block2ImgL = genList(cncptCatATrials, cncptCatBTrials, blockNumTrials[1]);
+			
+		//CREATE BLOCK 3 TRIAL LIST - MIXED	
+		var	block3WordL = genList(wCatATrials, wCatBTrials, blockNumTrials[2]/2);
+		var	block3CncptL = genList(cncptCatATrials, cncptCatBTrials, blockNumTrials[2]/2);
+		var block3MixL = block3WordL.reduce(function(arr, v, i) {
+		                      return arr.concat(v, block3CncptL[i]); 
+		                   }, []);
+
+		//CREATE BLOCK 4 TRIAL LIST - MIXED	
+		var	block4WordL = genList(wCatATrials, wCatBTrials, blockNumTrials[3]/2);
+		var	block4CncptL = genList(cncptCatATrials, cncptCatBTrials, blockNumTrials[3]/2);
+		var block4MixL = block4WordL.reduce(function(arr, v, i) {
+		                      return arr.concat(v, block4CncptL[i]); 
+		                   }, []);
+
+		//CREATE BLOCK 5 TRIAL LIST - WORD REVERSAL
+		var	block5WordL = genList(wCatATrials2, wCatBTrials2, blockNumTrials[4]);
+
+		//CREATE BLOCK 6 TRIAL LIST - MIXED REVERSAL
+		var	block6WordL = genList(wCatATrials2, wCatBTrials2, blockNumTrials[5]/2);
+		var	block6CncptL = genList(cncptCatATrials, cncptCatBTrials, blockNumTrials[5]/2);
+		var block6MixL = block6WordL.reduce(function(arr, v, i) {
+		                      return arr.concat(v, block6CncptL[i]); 
+		                   }, []);
+
+		//CREATE BLOCK 7 TRIAL LIST - MIXED REVERSAL
+		var	block7WordL = genList(wCatATrials2, wCatBTrials2, blockNumTrials[6]/2);
+		var	block7CncptL = genList(cncptCatATrials, cncptCatBTrials, blockNumTrials[6]/2);
+		var block7MixL = block7WordL.reduce(function(arr, v, i) {
+		                      return arr.concat(v, block7CncptL[i]); 
+		                   }, []);
+
+
+		var wordTrial = {
+			type: jsPsych.timelineVariable('type'),
+			stimulus: jsPsych.timelineVariable('stimulus'),
+			stim_key_association: jsPsych.timelineVariable('stim_key_association'),
+			html_when_wrong: "<span style='color: red; font-size: 80px'>X</span>",
+			bottom_instructions: '<p>If you press the wrong key, a red X will appear. Press the other key to continue</p>',
+			force_correct_key_press: true,
+			display_feedback: true,
+			left_category_key: 'E',
+			right_category_key: 'I',
+			left_category_label: [wLabels[0]],
+			right_category_label: [wLabels[1]],
+			data: { trial_type: 'word' }
+		};
+
+		var cncptTrial = {
+			type: jsPsych.timelineVariable('type'),
+			stimulus: jsPsych.timelineVariable('stimulus'),
+			stim_key_association: jsPsych.timelineVariable('stim_key_association'),
+			html_when_wrong: "<span style='color: red; font-size: 80px'>X</span>",
+			bottom_instructions: '<p>If you press the wrong key, a red X will appear. Press the other key to continue</p>',
+			force_correct_key_press: true,
+			display_feedback: true,
+			left_category_key: 'E',
+			right_category_key: 'I',
+			left_category_label: [cLabels[0]],
+			right_category_label: [cLabels[1]],
+			data: { trial_type: 'cncpt' }
+		};
+
+		var wordTrial2 = {
+			type: jsPsych.timelineVariable('type'),
+			stimulus: jsPsych.timelineVariable('stimulus'),
+			stim_key_association: jsPsych.timelineVariable('stim_key_association'),
+			html_when_wrong: "<span style='color: red; font-size: 80px'>X</span>",
+			bottom_instructions: '<p>If you press the wrong key, a red X will appear. Press the other key to continue</p>',
+			force_correct_key_press: true,
+			display_feedback: true,
+			left_category_key: 'E',
+			right_category_key: 'I',
+			left_category_label: [wLabels[1]],
+			right_category_label: [wLabels[0]],
+			data: { trial_type: 'wordrev' }
+		};
+
+		var mixedTrial1p = {
+			type: jsPsych.timelineVariable('type'),
+			stimulus: jsPsych.timelineVariable('stimulus'),
+			stim_key_association: jsPsych.timelineVariable('stim_key_association'),
+			html_when_wrong: "<span style='color: red; font-size: 80px'>X</span>",
+			bottom_instructions: '<p>If you press the wrong key, a red X will appear. Press the other key to continue</p>',
+			force_correct_key_press: true,
+			display_feedback: true,
+			left_category_key: 'E',
+			right_category_key: 'I',
+			left_category_label: [cLabels[0],wLabels[0]],
+			right_category_label: [cLabels[1],wLabels[1]],
+			data: { trial_type: 'wordcncpt', condition: iatcond[0]+"p", hand: iathand[0],  }
+		};
+
+		var mixedTrial1 = {
+			type: jsPsych.timelineVariable('type'),
+			stimulus: jsPsych.timelineVariable('stimulus'),
+			stim_key_association: jsPsych.timelineVariable('stim_key_association'),
+			html_when_wrong: "<span style='color: red; font-size: 80px'>X</span>",
+			bottom_instructions: '<p>If you press the wrong key, a red X will appear. Press the other key to continue</p>',
+			force_correct_key_press: true,
+			display_feedback: true,
+			left_category_key: 'E',
+			right_category_key: 'I',
+			left_category_label: [cLabels[0],wLabels[0]],
+			right_category_label: [cLabels[1],wLabels[1]],
+			data: { trial_type: 'wordcncpt', condition: iatcond[0], hand: iathand[0] }
+		};
+
+		var mixedTrial2p = {
+			type: jsPsych.timelineVariable('type'),
+			stimulus: jsPsych.timelineVariable('stimulus'),
+			stim_key_association: jsPsych.timelineVariable('stim_key_association'),
+			html_when_wrong: "<span style='color: red; font-size: 80px'>X</span>",
+			bottom_instructions: '<p>If you press the wrong key, a red X will appear. Press the other key to continue</p>',
+			force_correct_key_press: true,
+			display_feedback: true,
+			left_category_key: 'E',
+			right_category_key: 'I',
+			left_category_label: [cLabels[0],wLabels[1]],
+			right_category_label: [cLabels[1],wLabels[0]],
+			data: { trial_type: 'wordcncptrev', condition: iatcond[1]+"p", hand: iathand[1] }
+		};
+
+		var mixedTrial2 = {
+			type: jsPsych.timelineVariable('type'),
+			stimulus: jsPsych.timelineVariable('stimulus'),
+			stim_key_association: jsPsych.timelineVariable('stim_key_association'),
+			html_when_wrong: "<span style='color: red; font-size: 80px'>X</span>",
+			bottom_instructions: '<p>If you press the wrong key, a red X will appear. Press the other key to continue</p>',
+			force_correct_key_press: true,
+			display_feedback: true,
+			left_category_key: 'E',
+			right_category_key: 'I',
+			left_category_label: [cLabels[0],wLabels[1]],
+			right_category_label: [cLabels[1],wLabels[0]],
+			data: { trial_type: 'wordcncptrev', condition: iatcond[1], hand: iathand[1] }
+		};
+
+		var block1 = {
+			timeline: [wordTrial],
+		  	timeline_variables: block1WordL
+		};
+
+		var block2 = {
+			timeline: [cncptTrial],
+		  	timeline_variables: block2ImgL
+		};
+
+		var block3 = {
+			timeline: [mixedTrial1p],
+		  	timeline_variables: block3MixL
+		};
+
+		var block4 = {
+			timeline: [mixedTrial1],
+		  	timeline_variables: block4MixL
+		};
+
+		var block5 = {
+			timeline: [wordTrial2],
+		  	timeline_variables: block5WordL
+		};
+
+		var block6 = {
+			timeline: [mixedTrial2p],
+		  	timeline_variables: block6MixL
+		};
+
+		var block7 = {
+			timeline: [mixedTrial2],
+		  	timeline_variables: block7MixL
+		};
+
+		var wrap_up_block = {
+			type: "html-keyboard-response",
+			stimulus: "",
+			choices: [jsPsych.NO_KEYS],
+			on_start: function() {
+				start_time = jsPsych.startTime(); //displayed in Greenwich Mean Time
+				total_time = jsPsych.totalTime(); //displayed in milliseconds
+				var congpRT=jsPsych.data.get().filter({condition:'CONGp'}).filterCustom(function(trial){return trial.rt>300&&trial.rt<10000}).select('frt').mean();
+				var congRT=jsPsych.data.get().filter({condition:'CONG'}).filterCustom(function(trial){return trial.rt>300&&trial.rt<10000}).select('frt').mean();
+				var incopRT=jsPsych.data.get().filter({condition:'INCOp'}).filterCustom(function(trial){return trial.rt>300&&trial.rt<10000}).select('frt').mean();
+				var incoRT=jsPsych.data.get().filter({condition:'INCO'}).filterCustom(function(trial){return trial.rt>300&&trial.rt<10000}).select('frt').mean();
+				var p_std=jsPsych.data.get().filter([{condition:'CONGp'},{condition:'INCOp'}]).filterCustom(function(trial){return trial.rt>300&&trial.rt<10000}).select('frt').sd();
+				var std=jsPsych.data.get().filter([{condition:'CONG'},{condition:'INCO'}]).filterCustom(function(trial){return trial.rt>300&&trial.rt<10000}).select('frt').sd();
+				var p_std_ct=jsPsych.data.get().filter([{condition:'CONGp'},{condition:'INCOp'}]).filterCustom(function(trial){return trial.rt>300&&trial.rt<10000}).select('frt').count();
+				var std_ct=jsPsych.data.get().filter([{condition:'CONG'},{condition:'INCO'}]).filterCustom(function(trial){return trial.rt>300&&trial.rt<10000}).select('frt').count();
+				var bad_rt_ct=jsPsych.data.get().filterCustom(function(trial){return trial.correct==true||trial.correct==false}).filterCustom(function(trial){return trial.rt<300}).select('frt').count();
+
+				p_std=Math.sqrt((Math.pow(p_std,2)*p_std_ct)/(p_std_ct-1));
+				std=Math.sqrt((Math.pow(std,2)*std_ct)/(std_ct-1));
+				congpRT=Math.round(congpRT*1000)/1000;
+				incopRT=Math.round(incopRT*1000)/1000;
+				congRT=Math.round(congRT*1000)/1000;
+				incoRT=Math.round(incoRT*1000)/1000;
+				p_std=Math.round(p_std*1000)/1000;
+				std=Math.round(std*1000)/1000;
+				if (bad_rt_ct>=20){
+					var IAT_D = NaN;
+				}else{
+					var IAT_D = ((incopRT-congpRT)/p_std+(incoRT-congRT)/std)/2;
+				}
+				jsPsych.data.get().addToAll({subject_id: sid, task: task, iatcond: iatcond, iathand: iathand, startTime: start_time, totalTime: total_time, iatd: IAT_D});
+				if(pav == 0){
+					let date = new Date();
+					let dateString = date.getFullYear() + '-' + ('0'+(1+date.getMonth())).slice(-2) + '-' + ('0'+date.getDate()).slice(-2) + '_';
+					dateString += ('0'+date.getHours()).slice(-2) + 'h' + ('0'+date.getMinutes()).slice(-2) + '.' + ('0'+date.getSeconds()).slice(-2);
+
+					jsPsych.data.get().localSave('csv', task + '_' + sid + '_' + dateString + '.csv');
+				};
+			},
+			trial_duration: 500
+		};
+				
+
+	    var display_data_block = {
+			type: "instructions",
+		  	pages: ["<p>Thank you for completing task "+currTsk+" out of "+numTsks+"!</p>"],
+			on_start: function (trial){
+				if (currTsk<numTsks){
+					trial.pages[0] += "<p><em>Please press the return/enter key to proceed to the next task</em></p>";
+				} else{
+			trial.pages[0] += '<p style="text-align:center;">'+
+			'<strong>PLEASE NOTE: YOU ARE NOT DONE WITH THE SURVEY, THIS IS NOT THE COMPLETION CODE FOR PROLIFIC.</p></strong>'+
+			"<style>* {cursor:auto}</style><p><em>Please copy this task completion code: <strong>"+compCode+"</strong><br> Paste it into the correct "+
+  				"field of the survey that you were completing before you started the tasks, and then complete the survey "+
+  				"<br>(you can close this window once you have entered the completion code)</em></p>";
+					trial.key_forward=[jsPsych.NO_KEYS];
+				};			
+			},
+			key_forward: [13]
+	    };
+		
+	    var save_data_block = {
+	    	type: "html-keyboard-response",
+	    	stimulus: "SAVING DATA - PLEASE WAIT FOR 5 SECONDS",
+	    	trial_duration: 5000,
+	    	response_ends_trial: false,
+	    	key_forward: [jsPsych.NO_KEYS]
+	    };
+		
+	    function goToNextTask(FTV){
+			var NTV = FTV.split('*t')[1];
+			if ((FTV.match(/\*t/g) || []).length > 1){
+				FTV = FTV.slice(FTV.indexOf('*t',1));
+			}else{
+				FTV = [];
+			};
+			var ntNUM=NTV.split('*a')[0][0];
+			var ntPath=NTV.split('*a')[0].slice(1);			
+			var ntVAR=NTV.slice(NTV.indexOf('*a')).replace(/\*a/g,'&').replace(/\*e/g,'=');
+			var currLoc = window.location.href.split('?')[0];
+			if (currLoc.slice(-5)==".html" || currLoc.slice(-1)=="/"){
+				parLoc=currLoc.slice(0,currLoc.indexOf(currLoc.split("/").slice(-2,-1)[0]));
+			}else {
+				parLoc=currLoc.slice(0,currLoc.indexOf(currLoc.split("/").slice(-1)[0]))
+			}
+			
+			var NEXTURL = parLoc + ntPath + ".html" + "?SID=" + sid + "&PAV=" + pav + "&CT=" + (parseInt(currTsk,10)+1) + "o" + numTsks + ntVAR + "&FTV=" + FTV;
+			
+	    	window.location = NEXTURL;
+	    };
+					
+		var timeline = [];
+	   
+	    if(pav == 1){
+	    // /* init connection with pavlovia.org */
+	  	  var pavlovia_init = {
+	  	  	type: "pavlovia",
+	  	  	command: "init"
+	  	  };
+	  	  timeline.push(pavlovia_init);
+	    };
+	    //
+		timeline.push(welcome);
+		timeline.push(block1);
+		timeline.push(b2Instrux);
+		timeline.push(block2);
+		timeline.push(b3Instrux);
+		timeline.push(block3);
+		timeline.push(b4Instrux);
+		timeline.push(block4);
+		timeline.push(b5Instrux);
+		timeline.push(block5);
+		timeline.push(b6Instrux);
+		timeline.push(block6);
+		timeline.push(b7Instrux);
+		timeline.push(block7);
+		timeline.push(wrap_up_block);
+	    /* finish connection with pavlovia.org */
+	    if(pav == 1){
+		  	var pavlovia_finish = {
+		  		type: "pavlovia",
+		      	command: "finish",
+				participantId: 'wave8_'+sid
+		    	};
+	    	timeline.push(pavlovia_finish);
+	    	timeline.push(save_data_block);
+		};
+		timeline.push(display_data_block);
+	
+
+	   
+		jsPsych.init({
+			timeline: timeline,
+			// preload_images: imgsToPreload,
+		    on_interaction_data_update: function(data) {
+		      // console.log(data.event)
+				// jsPsych.data.addDataToLastTrial({browInt:JSON.stringify(data)})
+				if (data.event=='blur'){
+					data.trial_type='blurevent';
+					jsPsych.data.get().push(data);
+				} else if (data.event=='focus'){
+					data.trial_type='focusevent';
+					jsPsych.data.get().push(data);
+				} else if (data.event=='fullscreenenter'){
+					fullscreenFlag=1;
+					data.trial_type='fullscreenenter';
+					jsPsych.data.get().push(data);
+				} else if (data.event=='fullscreenexit'){
+					fullscreenFlag=0;
+					data.trial_type='fullscreenexit';
+					jsPsych.data.get().push(data);
+				};				
+			},	
+			on_finish: function() {
+			 if (FTV.length>0){
+				 goToNextTask(FTV);
+			 };
+			 }
+		});
+	</script>
+</html>

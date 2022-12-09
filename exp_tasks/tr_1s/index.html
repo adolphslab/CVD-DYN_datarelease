@@ -1,0 +1,329 @@
+<!doctype html>
+<html>
+<head>
+  <title>tr_1s</title>
+		  <script type="text/javascript" src="jspsych-6.0.5/jspsych.js"></script>
+		  <link rel="stylesheet" type="text/css" href="jspsych-6.0.5/css/jspsych.css"/>
+
+		<script src="jspsych-6.0.5/jspsych.js"></script>
+		<script src="jspsych-6.0.5/plugins/jspsych-instructions.js"></script>
+		<script src="jspsych-6.0.5/plugins/jspsych-html-keyboard-response.js"></script>
+
+		<script type="text/javascript" src="lib/vendors/jquery-2.2.0.min.js"></script>
+		  <!-- <script type="text/javascript" src="lib/jspsych-pavlovia-3.0.0.js"></script> -->
+  		<script type="text/javascript" src="lib/jspsych-pavlovia-3.1.0.js"></script>
+  <!-- <style>
+  	* {
+  		cursor: none;
+  	}
+	</style> -->
+  <style>		
+    img {
+	  height: 300px;
+	  align:center;
+    }
+  </style>
+</head>
+<body>
+</body>
+<script>
+
+var task='tr_1s'; // Trust ratings single shot
+var compCode='cvd19@accy?!#16';
+var urlvar = jsPsych.data.urlVariables();
+
+
+// assumes followup task variables are passed in a string with following tags (*t# to indicate new task with a number, *a to indicate &, *e to indicate =)
+if(typeof urlvar.FTV == 'undefined'){
+	var FTV="";
+}else{
+	var FTV = urlvar.FTV;
+};		
+if(typeof urlvar.SID == 'undefined'){
+	var sid="testing";
+}else{
+	var sid = urlvar.SID;
+};
+if(typeof urlvar.PAV == 'undefined'){
+	var pav = 1;
+}else{
+	var pav = urlvar.PAV;
+};
+if(typeof urlvar.CT == 'undefined'){  //assumes currTask is in format 1o3
+	var currTsk='1';
+	var numTsks='1';			
+}else{
+	var currTsk = urlvar.CT[0];
+	var numTsks = urlvar.CT[2];
+};
+
+
+
+var black= [
+'img/Black/025_03_H300.png',
+'img/Black/CFD-BF-249-091-N_H300.png',
+'img/Black/CFD-BF-250-121-N_H300.png',
+'img/Black/CFD-BF-251-211-N_H300.png',
+'img/Black/CFD-BF-252-191-N_H300.png',
+'img/Black/CFD-BF-253-202-N_H300.png',
+'img/Black/CFD-BF-254-201-N_H300.png',
+'img/Black/CFD-BF-255-140-N_H300.png',
+'img/Black/M_B_21_111_1102_MANUAL_H300.png',
+'img/Black/M_B_21_111_1368_TC_MANUAL_H300.png',
+'img/Black/M_B_22_111_1103_TC_MANUAL_H300.png',
+'img/Black/M_B_30_111_1184_MANUAL_H300.png',
+'img/Black/M_B_32_111_1105_MANUAL_H300.png',
+'img/Black/M_B_47_111_1109_MANUAL_H300.png',
+'img/Black/M_B_49_111_1108_MANUAL_H300.png',
+'img/Black/M_B_53_111_1383_MANUAL_H300.png',
+];
+var asian=[
+'img/Asian/01325A20_H300.png',
+'img/Asian/01376A20_H300.png',
+'img/Asian/01377A20_H300.png',
+'img/Asian/01378A20_H300.png',
+'img/Asian/01379A20_H300.png',
+'img/Asian/01728A23_H300.png',
+'img/Asian/01936A24_H300.png',
+'img/Asian/02005A24_H300.png',
+'img/Asian/08397A19_H300.png',
+'img/Asian/08399A19_H300.png',
+'img/Asian/08400A19_H300.png',
+'img/Asian/08417A20_H300.png',
+'img/Asian/08436A20_H300.png',
+'img/Asian/08450A20_H300.png',
+'img/Asian/08505A22_H300.png',
+'img/Asian/m-046-01_H300.png',
+];
+var white=[
+'img/White/001_03_H300.png',
+'img/White/002_03_H300.png',
+'img/White/003_03_H300.png',
+'img/White/004_03_H300.png',
+'img/White/009_03_H300.png',
+'img/White/010_03_H300.png',
+'img/White/011_03_H300.png',
+'img/White/012_03_H300.png',
+'img/White/014_03_H300.png',
+'img/White/018_03_H300.png',
+'img/White/021_03_H300.png',
+'img/White/026_03_H300.png',
+'img/White/041_03_H300.png',
+'img/White/063_03_H300.png',
+'img/White/068_03_H300.png',
+'img/White/118_03_H300.png',
+];
+
+var other=[
+'img/Other/109-11_H300.png',
+'img/Other/112-11_H300.png',
+'img/Other/114-11_H300.png',
+'img/Other/116-11_H300.png',
+'img/Other/123-11_H300.png',
+'img/Other/128-11_H300.png',
+'img/Other/156-11_H300.png',
+'img/Other/159-11_H300.png',
+'img/Other/163-11_H300.png',
+'img/Other/166-11_H300.png',
+'img/Other/167-11_H300.png',
+'img/Other/171-11_H300.png',
+'img/Other/178-11_H300.png',
+'img/Other/182-11_H300.png',
+'img/Other/187-11_H300.png',
+'img/Other/192-11_H300.png',
+];
+
+
+
+
+
+
+black=jsPsych.randomization.shuffle(black);
+white=jsPsych.randomization.shuffle(white);
+asian=jsPsych.randomization.shuffle(asian);
+other=jsPsych.randomization.shuffle(other);
+var faces=black.slice(0,15).concat(white.slice(0,15),other.slice(0,15),asian.slice(0,15));
+var faces=jsPsych.randomization.shuffle(faces,1);
+var trials=[];
+for (i=0; i<faces.length; i++) {
+	trials.push({stim: "<p><table style='width:100%'><tr><td class='center-content'>"+'<center><img style=height: 300px" src='+faces[i]+
+		'></img></center>'+"</td></tr>"+"<tr><td class='center-content'>How much do you trust this person to<br>act responsibly with respect to the COVID-19 pandemic?" +
+          "<br><strong>1&nbsp; &nbsp; 2&nbsp; &nbsp; 3&nbsp; &nbsp; 4&nbsp; &nbsp; 5&nbsp; &nbsp; 6&nbsp; &nbsp; 7&nbsp; &nbsp; 8&nbsp; &nbsp; 9</strong>" + 
+		  "<br>&nbsp; Not-at-all&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;" +
+	" Completely</td></tr></table></p>", race: faces[i].replace("img/","").slice(0,5) }); 	
+};
+
+var imgsToPreload=faces;
+
+// timeline_trust=[];
+//Below is setting up the timeline of the experiment including welcome page, instructions, and the trials
+var welcome_block = {
+	type: "instructions",
+	pages: ["<p><strong>Welcome to the experiment! This is task "+currTsk+" out of "+numTsks+" and will take around 5 minutes to complete."+
+	"</strong></p> <h3 style='color:#FF9900'>PLEASE READ ALL INSTRUCTIONS CAREFULLY AS YOU WILL BE TESTED ON COMPREHENSION.</h3>"+
+	"<p><em>Press the SPACEBAR to continue.</em></p>",
+	"<div class='header'><small>Task "+currTsk+" of "+numTsks+"</small></div><p><strong>In this task</strong> "+
+	"you will be presented with many pictures of faces." + 
+		"<p>For each face, please rate <br><strong>how much you trust the person in the photo to act responsibly with respect to the COVID-19 pandemic</strong><br> on a scale from <strong>1 (Not-at-all)</strong> to <strong>9 (Completely)</strong></p>" +
+		"<p><strong>For example:</strong></p>" +
+          "<p><table style='width:100%'><tr><td class='center-content'><img src='img/example_dm.png'></img></td></tr>" +
+			"<tr><td class='center-content'>How much do you trust this person to<br>act responsibly with respect to the COVID-19 pandemic?" +
+          "<br><strong>1&nbsp; &nbsp; 2&nbsp; &nbsp; 3&nbsp; &nbsp; 4&nbsp; &nbsp; 5&nbsp; &nbsp; 6&nbsp; &nbsp; 7&nbsp; &nbsp; 8&nbsp; &nbsp; 9</strong>" + 
+		  "<br>&nbsp; Not-at-all&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;" +
+	" Completely</td></tr></table></p>" +
+	"<p><em>Press SPACEBAR to continue</em></p></center>",
+	
+	"<div class='header'><small>Task "+currTsk+" of "+numTsks+"</small></div><p>One last thing before we start. "+
+	"<p>Please use the number keys at the top of your keyboard (<strong>NOT your number pad</strong>) to enter your response on each trial." + 
+	"<p>You can start when ready." +
+	"<p><em>Press SPACEBAR to continue</em></p></center>",
+],
+	key_forward: [32],
+	// key_backward: [66]
+};
+
+
+var trustrating={
+        type: 'html-keyboard-response',
+	stimulus: jsPsych.timelineVariable('stim'),
+		choices: ['1', '2', '3', '4', '5', '6', '7', '8', '9'],
+		response_ends_trial: true,
+		post_trial_gap:100,
+		data: { trialtype: 'TR', trialrace: jsPsych.timelineVariable('race') },
+		on_finish: function (trial) {
+			trial.key_press = String.fromCharCode(trial.key_press);
+		}
+}
+var trustTrial={
+	timeline: [trustrating],
+	timeline_variables: trials
+}
+
+
+var wrap_up_block = {
+	type: "html-keyboard-response",
+	stimulus: "",
+	choices: [jsPsych.NO_KEYS],
+	on_start: function() {
+		start_time = jsPsych.startTime(); //displayed in Greenwich Mean Time
+		total_time = jsPsych.totalTime(); //displayed in milliseconds
+		jsPsych.data.get().addToAll({subject_id: sid, task: task, startTime: start_time, totalTime: total_time});
+		if(pav == 0){
+			let date = new Date();
+			let dateString = date.getFullYear() + '-' + ('0'+(1+date.getMonth())).slice(-2) + '-' + ('0'+date.getDate()).slice(-2) + '_';
+			dateString += ('0'+date.getHours()).slice(-2) + 'h' + ('0'+date.getMinutes()).slice(-2) + '.' + ('0'+date.getSeconds()).slice(-2);
+			
+			jsPsych.data.get().localSave('csv', task + '_' + sid + '_' + dateString + '.csv');
+		};
+	},
+	trial_duration: 500
+};
+
+var display_data_block_trust = {
+	type: "instructions",
+	pages: ["<p>Thank you for completing task "+currTsk+" out of "+numTsks+"!</p>"],
+	on_start: function (trial){
+		if (currTsk<numTsks){
+			trial.pages[0] += "<p><em>Please press the return/enter key to proceed to the next task</em></p>";
+		} else{
+			trial.pages[0] += '<p style="text-align:center;">'+
+			'<strong>PLEASE NOTE: YOU ARE NOT DONE WITH THE SURVEY, THIS IS NOT THE COMPLETION CODE FOR PROLIFIC.</p></strong>'+
+			"<style>* {cursor:auto}</style><p><em>Please copy this task completion code: <strong>"+compCode+"</strong><br> Paste it into the correct "+
+  				"field of the survey that you were completing before you started the tasks, and then complete the survey "+
+  				"<br>(you can close this window once you have entered the completion code)</em></p>";
+			trial.key_forward=[jsPsych.NO_KEYS];
+		};
+		
+	},
+	key_forward: [13]
+};
+
+var save_data_block = {
+	type: "html-keyboard-response",
+	stimulus: "SAVING DATA - PLEASE WAIT FOR 5 SECONDS",
+	trial_duration: 5000,
+	response_ends_trial: false,
+	key_forward: [jsPsych.NO_KEYS]
+};
+
+  
+function goToNextTask(FTV){
+	var NTV = FTV.split('*t')[1];
+	if ((FTV.match(/\*t/g) || []).length > 1){
+		FTV = FTV.slice(FTV.indexOf('*t',1));
+	}else{
+		FTV = [];
+	};
+	var ntNUM=NTV.split('*a')[0][0];
+	var ntPath=NTV.split('*a')[0].slice(1);			
+	var ntVAR=NTV.slice(NTV.indexOf('*a')).replace(/\*a/g,'&').replace(/\*e/g,'=');
+	var currLoc = window.location.href.split('?')[0];
+	if (currLoc.slice(-5)==".html" || currLoc.slice(-1)=="/"){
+		parLoc=currLoc.slice(0,currLoc.indexOf(currLoc.split("/").slice(-2,-1)[0]));
+	}else {
+		parLoc=currLoc.slice(0,currLoc.indexOf(currLoc.split("/").slice(-1)[0]))
+	}
+	
+	var NEXTURL = parLoc + ntPath + ".html" + "?SID=" + sid + "&PAV=" + pav + "&CT=" + (parseInt(currTsk,10)+1) + "o" + numTsks + ntVAR + "&FTV=" + FTV;
+	
+	window.location = NEXTURL;
+};
+
+
+
+  var experiment=[];
+  if(pav == 1){
+  // /* init connection with pavlovia.org */
+  	var pavlovia_init = {
+  		type: "pavlovia",
+  		command: "init"
+  	};
+  	experiment.push(pavlovia_init);
+  };
+  
+  experiment.push(welcome_block);
+  experiment.push(trustTrial);
+  experiment.push(wrap_up_block);
+  if(pav == 1){
+  	var pavlovia_finish = {
+  		type: "pavlovia",
+      	command: "finish",
+		participantId: 'wave16_'+sid
+    	};
+	  	experiment.push(pavlovia_finish);
+	  	experiment.push(save_data_block);
+  };
+  experiment.push(display_data_block_trust);
+    
+
+  
+    jsPsych.init({
+        timeline: experiment,
+		preload_images: imgsToPreload,	
+	    on_interaction_data_update: function(data) {
+	      // console.log(data.event)
+			// jsPsych.data.addDataToLastTrial({browInt:JSON.stringify(data)})
+			if (data.event=='blur'){
+				data.trialtype='blurevent';
+				jsPsych.data.get().push(data);
+			} else if (data.event=='focus'){
+				data.trialtype='focusevent';
+				jsPsych.data.get().push(data);
+			} else if (data.event=='fullscreenenter'){
+				fullscreenFlag=1;
+				data.trialtype='fullscreenenter';
+				jsPsych.data.get().push(data);
+			} else if (data.event=='fullscreenexit'){
+				fullscreenFlag=0;
+				data.trialtype='fullscreenexit';
+				jsPsych.data.get().push(data);
+			};				
+		},	
+		on_finish: function() {
+			if (FTV.length>0){
+				goToNextTask(FTV);
+			};
+		}
+    });
+  </script>
+  </html>
