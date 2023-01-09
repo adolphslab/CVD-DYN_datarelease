@@ -7,6 +7,9 @@
    viewBox="0 0 3600 2880"
    version="1.1"
    height="2880pt"
+   inkscape:export-filename="../../../../../../Desktop/Fig5.pdf"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -20,9 +23,9 @@
      inkscape:window-maximized="0"
      inkscape:window-y="25"
      inkscape:window-x="56"
-     inkscape:cy="2180.0453"
-     inkscape:cx="4204.293"
-     inkscape:zoom="0.44609165"
+     inkscape:cy="3321.9712"
+     inkscape:cx="3070.8988"
+     inkscape:zoom="0.42218909"
      showgrid="false"
      id="namedview8008"
      inkscape:window-height="855"
@@ -1335,6 +1338,650 @@
          y="345.60001"
          id="rect8014-0" />
     </clipPath>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter281910"
+       x="-0.0030389521"
+       y="-0.0024908265"
+       width="1.0072784"
+       height="1.0057247">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix281908" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter281914"
+       x="-0.0046046128"
+       y="-0.0053797894"
+       width="1.0086871"
+       height="1.0101859">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix281912" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter281918"
+       x="-0.009342976"
+       y="-0.008241457"
+       width="1.0141491"
+       height="1.0141491">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix281916" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter281934"
+       x="-0.00079172684"
+       y="-0.029175131"
+       width="1.0055979"
+       height="1.0627578">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix281932"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix281948" />
+      <feColorMatrix
+         id="feColorMatrix281950"
+         values="0.5 0 0 0 0.5 0 0.5 0 0 0.5 0 0 0.5 0 0.5 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter281954"
+       x="-0.006024263"
+       y="-0.0083790027"
+       width="1.0183218"
+       height="1.0183218">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix281952" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter281958"
+       x="-0.0050695093"
+       y="-0.0048061134"
+       width="1.0101909"
+       height="1.0119949">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix281956" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter281962"
+       x="-0.012923574"
+       y="-0.009937283"
+       width="1.0179865"
+       height="1.0179865">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix281960"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix282261" />
+      <feColorMatrix
+         id="feColorMatrix282263"
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter281966"
+       x="-0.00063952379"
+       y="-0.036118824"
+       width="1.0054712"
+       height="1.0767231">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix281964" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter281970"
+       x="-2.5657896e-05"
+       y="-0.90025207"
+       width="1.0048318"
+       height="2.8052972">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix281968" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter281974"
+       x="-0.0011033851"
+       y="-0.02093453"
+       width="1.0065548"
+       height="1.046309">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix281972" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter281978"
+       x="-0.0092903908"
+       y="-0.0079329853"
+       width="1.0152195"
+       height="1.0152195">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix281976" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter281982"
+       x="-0.010104714"
+       y="-0.0022859467"
+       width="1.0242232"
+       height="1.0084132">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix281980" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter281986"
+       x="-0.0037991463"
+       y="-0.0046878751"
+       width="1.0084694"
+       height="1.008546">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix281984" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter281990"
+       x="-0.00010262315"
+       y="-0.22509341"
+       width="1.0049087"
+       height="1.4549147">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix281988" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter281994"
+       x="-0.00023087067"
+       y="-0.10005124"
+       width="1.0051409"
+       height="1.2048183">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix281992" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter281998"
+       x="-0.0011697254"
+       y="-0.019747222"
+       width="1.0062069"
+       height="1.0437303">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix281996" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282002"
+       x="-0.014593303"
+       y="-0.011253216"
+       width="1.0194251"
+       height="1.0194251">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282000" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282006"
+       x="-0.012161506"
+       y="-0.0064935451"
+       width="1.0205505"
+       height="1.0205505">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282004" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282010"
+       x="-0.01205805"
+       y="-0.0048061279"
+       width="1.0258817"
+       height="1.006374">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282008" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282014"
+       x="-0.0024396398"
+       y="-0.0026742699"
+       width="1.0053992"
+       height="1.0050854">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282012" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282061"
+       x="-0.011418735"
+       y="-0.048247755"
+       width="1.0228375"
+       height="1.0964955">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282059" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282065"
+       x="-0.0037848726"
+       y="-0.0048061576"
+       width="1.0064791"
+       height="1.0096122">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282063" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282069"
+       x="-0.0072947475"
+       y="-0.0068731984"
+       width="1.0106555"
+       height="1.0177461">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282067" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282073"
+       x="-0.0048061238"
+       y="-0.0071178484"
+       width="1.0154228"
+       height="1.014273">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282071" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282077"
+       x="-0.0071978821"
+       y="-0.0050307868"
+       width="1.0129871"
+       height="1.0129871">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282075" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282081"
+       x="-0.023621517"
+       y="-0.0048061219"
+       width="1.0496504"
+       height="1.0056042">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282079" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282085"
+       x="-0.0079986458"
+       y="-0.0056154038"
+       width="1.016078"
+       height="1.016078">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282083" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282089"
+       x="-0.015595141"
+       y="-0.011863141"
+       width="1.0204013"
+       height="1.0204013">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282087" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282131"
+       x="-0.0037848726"
+       y="-0.0048061595"
+       width="1.0064791"
+       height="1.0096122">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282129" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282135"
+       x="-0.0072946833"
+       y="-0.0068732015"
+       width="1.0106554"
+       height="1.0177461">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282133" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282139"
+       x="-0.0048061238"
+       y="-0.007117856"
+       width="1.0154228"
+       height="1.014273">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282137" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282143"
+       x="-0.0071978821"
+       y="-0.0050307868"
+       width="1.0129871"
+       height="1.0129871">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282141" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282147"
+       x="-0.023621489"
+       y="-0.00480612"
+       width="1.0496504"
+       height="1.0056042">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282145" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282151"
+       x="-0.0079986458"
+       y="-0.0056154038"
+       width="1.016078"
+       height="1.016078">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282149" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282155"
+       x="-0.015595141"
+       y="-0.011863141"
+       width="1.0204013"
+       height="1.0204013">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282153" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282160"
+       x="-0.00010262315"
+       y="-0.22509341"
+       width="1.0049087"
+       height="1.4549147">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282158" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282164"
+       x="-0.00023086934"
+       y="-0.10005124"
+       width="1.0051409"
+       height="1.2048182">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282162" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282168"
+       x="-0.0011697254"
+       y="-0.019747222"
+       width="1.0062069"
+       height="1.0437303">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282166" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282172"
+       x="-0.014593284"
+       y="-0.011253229"
+       width="1.0194251"
+       height="1.0194251">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282170" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282176"
+       x="-0.012161515"
+       y="-0.0064935451"
+       width="1.0205505"
+       height="1.0205505">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282174" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282180"
+       x="-0.01205805"
+       y="-0.0048061279"
+       width="1.0258817"
+       height="1.006374">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282178" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282184"
+       x="-0.0024396398"
+       y="-0.0026742699"
+       width="1.0053992"
+       height="1.0050854">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282182" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282223"
+       x="-0.0092903908"
+       y="-0.0079329853"
+       width="1.0152195"
+       height="1.0152195">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282221" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282227"
+       x="-0.010104714"
+       y="-0.0022859467"
+       width="1.0242233"
+       height="1.0084132">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282225" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282231"
+       x="-0.0037991463"
+       y="-0.0046878751"
+       width="1.0084694"
+       height="1.008546">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282229" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282235"
+       x="-0.006024263"
+       y="-0.0083790027"
+       width="1.0183218"
+       height="1.0183218">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282233" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282239"
+       x="-0.0050695093"
+       y="-0.0048061134"
+       width="1.0101909"
+       height="1.0119949">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282237" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282251"
+       x="-0.012923574"
+       y="-0.009937283"
+       width="1.0179865"
+       height="1.0179865">
+      <feColorMatrix
+         values="0.5 0 0 0 0.5 0 0.5 0 0 0.5 0 0 0.5 0 0.5 0 0 0 1 0"
+         id="feColorMatrix282249" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282275"
+       x="-0.0030389519"
+       y="-0.0024908263"
+       width="1.0072784"
+       height="1.0057247">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282273" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282279"
+       x="-0.009342976"
+       y="-0.008241457"
+       width="1.0141491"
+       height="1.0141491">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282277" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282283"
+       x="-0.0046046128"
+       y="-0.0053797894"
+       width="1.0086871"
+       height="1.0101859">
+      <feColorMatrix
+         values="0.7 0 0 0 0.3 0 0.7 0 0 0.3 0 0 0.7 0 0.3 0 0 0 1 0"
+         id="feColorMatrix282281" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Fade to Black or White"
+       id="filter282287"
+       x="-0.00079172684"
+       y="-0.029175131"
+       width="1.0055979"
+       height="1.0627578">
+      <feColorMatrix
+         values="0.5 0 0 0 0.5 0 0.5 0 0 0.5 0 0 0.5 0 0.5 0 0 0 1 0"
+         id="feColorMatrix282285" />
+    </filter>
   </defs>
   <defs
      id="defs8004">
@@ -3414,7 +4061,7 @@
       </g>
       <g
          id="patch_274-9"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282172)"
          transform="translate(77.58311,181.2638)">
         <path
            id="path5072"
@@ -3423,7 +4070,7 @@
       </g>
       <g
          id="patch_275-9"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282176)"
          transform="translate(77.58311,181.2638)">
         <path
            id="path5075"
@@ -3441,25 +4088,20 @@
       </g>
       <g
          id="patch_277-3"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282180)"
          transform="translate(77.58311,181.2638)">
         <path
            id="path5081"
            style="fill:#b22222;stroke:#000000;stroke-linejoin:miter"
            d="m 2446.3963,2101.8929 c -7.3574,-2.5391 -14.9766,-4.2445 -22.7144,-5.0842 -7.7378,-0.8398 -15.5455,-0.8085 -23.2763,0.093 l 12.052,103.3334 z" />
       </g>
-      <g
-         id="patch_278-3"
-         style="stroke-linecap:butt;stroke-linejoin:round"
-         transform="translate(77.58311,181.2638)">
-        <path
-           id="path5084"
-           style="fill:#3cb371;stroke:#000000;stroke-linejoin:miter"
-           d="m 2400.4056,2096.9019 c -18.847,2.1981 -36.7382,9.5112 -51.7286,21.1441 -14.9905,11.6329 -26.5165,27.1483 -33.3251,44.8594 -6.8086,17.711 -8.6437,36.9518 -5.3059,55.6306 3.3379,18.6788 11.7232,36.0933 24.2444,50.3501 12.5212,14.2569 28.7074,24.8202 46.7991,30.5414 18.0916,5.7212 37.4083,6.3853 55.8501,1.92 18.4418,-4.4652 35.3153,-13.8919 48.786,-27.2552 13.4707,-13.3633 23.0322,-30.1608 27.645,-48.5662 l -100.913,-25.2908 z" />
-      </g>
+      <path
+         id="path5084"
+         style="fill:#3cb371;stroke:#000000;stroke-linejoin:miter;filter:url(#filter282184)"
+         d="m 2477.9887,2278.1657 c -18.847,2.1981 -36.7382,9.5112 -51.7286,21.1441 -14.9905,11.6329 -26.5165,27.1483 -33.3251,44.8594 -6.8086,17.711 -8.6437,36.9518 -5.3059,55.6306 3.3379,18.6788 11.7232,36.0933 24.2444,50.3501 12.5212,14.2569 28.7074,24.8202 46.7991,30.5414 18.0916,5.7212 37.4083,6.3853 55.8501,1.92 18.4418,-4.4652 35.3153,-13.8919 48.786,-27.2552 13.4707,-13.3633 23.0322,-30.1608 27.645,-48.5662 l -100.913,-25.2908 z" />
       <g
          id="patch_279-7"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282168)"
          transform="translate(77.58311,181.2638)">
         <path
            id="path5087"
@@ -3468,7 +4110,7 @@
       </g>
       <g
          id="patch_280-7"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282164)"
          transform="translate(77.58311,181.2638)">
         <path
            id="path5090"
@@ -3477,7 +4119,7 @@
       </g>
       <g
          id="patch_281-3"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282160)"
          transform="translate(77.58311,181.2638)">
         <path
            id="path5093"
@@ -3566,7 +4208,7 @@
       <g
          id="text_194-6"
          style="stroke-linecap:butt;stroke-linejoin:round"
-         transform="translate(77.58311,181.2638)">
+         transform="translate(73.08311,196.2638)">
         <!-- 66% -->
         <g
            id="g5139"
@@ -3853,7 +4495,7 @@
       </g>
       <g
          id="patch_244-4"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282251)"
          transform="translate(77.16188,182.2083)">
         <path
            id="path4489-1"
@@ -4133,7 +4775,7 @@
          id="g26107">
         <g
            transform="translate(76.65757,181.3153)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
+           style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282279)"
            id="patch_224-8">
           <path
              d="m 1381.5763,2200.2353 c 0,-16.5529 -3.9506,-32.8693 -11.5225,-47.5888 -7.5719,-14.7196 -18.5487,-27.4216 -32.0152,-37.0472 l -60.4962,84.636 z"
@@ -4142,7 +4784,7 @@
         </g>
         <g
            transform="translate(76.65757,181.3153)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
+           style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282275)"
            id="patch_225-6">
           <path
              d="m 1338.0386,2115.5993 c -11.9797,-8.5629 -25.642,-14.4855 -40.0811,-17.3752 -14.4391,-2.8896 -29.3285,-2.6809 -43.6809,0.6122 -14.3524,3.2931 -27.8434,9.5963 -39.5785,18.4915 -11.735,8.8952 -21.4489,20.1815 -28.4974,33.1103 -7.0484,12.9289 -11.2723,27.2081 -12.3914,41.8909 -1.119,14.6828 0.8919,29.4372 5.8995,43.285 5.0077,13.8477 12.8988,26.4758 23.1502,37.0468 10.2514,10.5709 22.6313,18.8459 36.3189,24.2762 l 38.3645,-96.7017 z"
@@ -4151,7 +4793,7 @@
         </g>
         <g
            transform="translate(76.65757,181.3153)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
+           style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282283)"
            id="patch_226-2">
           <path
              d="m 1239.1779,2296.937 c 14.4274,5.7238 29.9545,8.1469 45.44,7.0913 15.4854,-1.0556 30.54,-5.5635 44.0572,-13.1923 13.5172,-7.6287 25.1574,-18.1867 34.0648,-30.8978 8.9073,-12.711 14.8582,-27.2558 17.4151,-42.5651 l -102.6126,-17.1378 z"
@@ -4160,7 +4802,7 @@
         </g>
         <g
            transform="translate(76.65757,181.3153)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
+           style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282287)"
            id="patch_227-5">
           <path
              d="m 1380.155,2217.3731 c 0.4727,-2.8306 0.8282,-5.6796 1.0653,-8.5395 0.2372,-2.86 0.356,-5.7286 0.356,-8.5984 l -104.0339,10e-5 z"
@@ -4311,7 +4953,7 @@
              xlink:href="#ArialMT-54"
              x="55.615234"
              style="stroke-linecap:butt;stroke-linejoin:round"
-             transform="translate(-23.845008,-1.415405)" />
+             transform="translate(1.154992,-1.415405)" />
         </g>
       </g>
       <g
@@ -4663,217 +5305,214 @@
         </g>
       </g>
       <g
-         id="g27488">
+         transform="translate(77.16148,181.2638)"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282155)"
+         id="patch_299-3">
+        <path
+           d="m 3083.9492,2200.2353 c 0,-10.3861 -1.5554,-20.7138 -4.6142,-30.6393 -3.0588,-9.9254 -7.5868,-19.337 -13.4331,-27.9214 l -85.9866,58.5607 z"
+           style="fill:#66c2a5;stroke:#000000;stroke-linejoin:miter"
+           id="path5645" />
+      </g>
+      <g
+         transform="translate(77.16148,181.2638)"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282151)"
+         id="patch_300-7">
+        <path
+           d="m 3065.9019,2141.6746 c -7.894,-11.591 -18.0508,-21.4671 -29.8585,-29.0332 -11.8077,-7.5661 -25.0243,-12.6671 -38.8534,-14.9957 l -17.2747,102.5896 z"
+           style="fill:#fc8d62;stroke:#000000;stroke-linejoin:miter"
+           id="path5648" />
+      </g>
+      <g
+         transform="translate(77.16148,181.2638)"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282147)"
+         id="patch_301-4">
+        <path
+           d="m 2997.19,2097.6457 c -3.6519,-0.615 -7.334,-1.0345 -11.0306,-1.2567 -3.6967,-0.2223 -7.4025,-0.2471 -11.1018,-0.074 l 4.8577,103.9204 z"
+           style="fill:#8da0cb;stroke:#000000;stroke-linejoin:miter"
+           id="path5651" />
+      </g>
+      <g
+         transform="translate(77.16148,181.2638)"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282143)"
+         id="patch_302-8">
+        <path
+           d="m 2975.0576,2096.3149 c -18.507,0.8651 -36.4512,6.6584 -51.9701,16.7788 -15.5188,10.1203 -28.0561,24.2048 -36.3105,40.7916 l 93.1383,46.35 z"
+           style="fill:#a6d854;stroke:#000000;stroke-linejoin:miter"
+           id="path5654-0" />
+      </g>
+      <g
+         transform="translate(77.16148,181.2638)"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282139)"
+         id="patch_303-4">
+        <path
+           d="m 2886.777,2153.8853 c -7.2911,14.6513 -11.0234,30.8183 -10.8923,47.183 0.131,16.3647 4.1217,32.4699 11.6465,47.0025 l 92.3841,-47.8355 z"
+           style="fill:#ffd92f;stroke:#000000;stroke-linejoin:miter"
+           id="path5657" />
+      </g>
+      <g
+         transform="translate(77.16148,181.2638)"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282135)"
+         id="patch_304-0">
+        <path
+           d="m 2887.5312,2248.0708 c 1.5325,2.9597 3.2063,5.8439 5.0156,8.6429 1.8093,2.7989 3.7521,5.5093 5.8217,8.1217 l 81.5468,-64.6001 z"
+           style="fill:#e5c494;stroke:#000000;stroke-linejoin:miter"
+           id="path5660" />
+      </g>
+      <g
+         transform="translate(77.16148,181.2638)"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282131)"
+         id="patch_305-5">
+        <path
+           d="m 2898.3685,2264.8354 c 13.4105,16.9286 31.7654,29.2684 52.5036,35.2976 20.7381,6.0291 42.8478,5.4536 63.2442,-1.6463 20.3964,-7.0999 38.0844,-20.3779 50.5961,-37.9812 12.5117,-17.6034 19.2368,-38.6734 19.2368,-60.2702 h -104.0339 z"
+           style="fill:#b3b3b3;stroke:#000000;stroke-linejoin:miter"
+           id="path5663" />
+      </g>
+      <g
+         transform="translate(78.66148,187.2638)"
+         style="stroke-linecap:butt;stroke-linejoin:round"
+         id="text_224-7">
+        <!-- 9% -->
         <g
-           transform="translate(77.16148,181.2638)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="patch_299-3">
-          <path
-             d="m 3083.9492,2200.2353 c 0,-10.3861 -1.5554,-20.7138 -4.6142,-30.6393 -3.0588,-9.9254 -7.5868,-19.337 -13.4331,-27.9214 l -85.9866,58.5607 z"
-             style="fill:#66c2a5;stroke:#000000;stroke-linejoin:miter"
-             id="path5645" />
+           transform="matrix(0.3,0,0,-0.3,3027.8294,2186.5433)"
+           id="g5723">
+          <use
+             xlink:href="#ArialMT-57"
+             id="use5719-3"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="55.615234"
+             xlink:href="#ArialMT-37-3"
+             id="use5721-4"
+             y="0"
+             width="100%"
+             height="100%" />
         </g>
+      </g>
+      <g
+         transform="translate(80.16148,181.2638)"
+         style="stroke-linecap:butt;stroke-linejoin:round"
+         id="text_225-3">
+        <!-- 12% -->
         <g
-           transform="translate(77.16148,181.2638)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="patch_300-7">
-          <path
-             d="m 3065.9019,2141.6746 c -7.894,-11.591 -18.0508,-21.4671 -29.8585,-29.0332 -11.8077,-7.5661 -25.0243,-12.6671 -38.8534,-14.9957 l -17.2747,102.5896 z"
-             style="fill:#fc8d62;stroke:#000000;stroke-linejoin:miter"
-             id="path5648" />
+           transform="matrix(0.3,0,0,-0.3,2989.1838,2146.6751)"
+           id="g5732">
+          <use
+             xlink:href="#ArialMT-49"
+             id="use5726"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="55.615234"
+             xlink:href="#ArialMT-50"
+             id="use5728"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="111.23047"
+             xlink:href="#ArialMT-37-3"
+             id="use5730"
+             y="0"
+             width="100%"
+             height="100%" />
         </g>
+      </g>
+      <g
+         transform="translate(77.16148,187.2638)"
+         style="stroke-linecap:butt;stroke-linejoin:round"
+         id="text_227-7">
+        <!-- 16% -->
         <g
-           transform="translate(77.16148,181.2638)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="patch_301-4">
-          <path
-             d="m 2997.19,2097.6457 c -3.6519,-0.615 -7.334,-1.0345 -11.0306,-1.2567 -3.6967,-0.2223 -7.4025,-0.2471 -11.1018,-0.074 l 4.8577,103.9204 z"
-             style="fill:#8da0cb;stroke:#000000;stroke-linejoin:miter"
-             id="path5651" />
+           transform="matrix(0.3,0,0,-0.3,2910.1148,2146.9916)"
+           id="g5748">
+          <use
+             xlink:href="#ArialMT-49"
+             id="use5742"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="55.615234"
+             xlink:href="#ArialMT-54"
+             id="use5744"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="111.23047"
+             xlink:href="#ArialMT-37-3"
+             id="use5746"
+             y="0"
+             width="100%"
+             height="100%" />
         </g>
+      </g>
+      <g
+         transform="translate(80.16148,181.2638)"
+         style="stroke-linecap:butt;stroke-linejoin:round"
+         id="text_228-5">
+        <!-- 14% -->
         <g
-           transform="translate(77.16148,181.2638)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="patch_302-8">
-          <path
-             d="m 2975.0576,2096.3149 c -18.507,0.8651 -36.4512,6.6584 -51.9701,16.7788 -15.5188,10.1203 -28.0561,24.2048 -36.3105,40.7916 l 93.1383,46.35 z"
-             style="fill:#a6d854;stroke:#000000;stroke-linejoin:miter"
-             id="path5654-0" />
+           transform="matrix(0.3,0,0,-0.3,2877.0728,2208.5739)"
+           id="g5757">
+          <use
+             xlink:href="#ArialMT-49"
+             id="use5751"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="55.615234"
+             xlink:href="#ArialMT-52"
+             id="use5753"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="111.23047"
+             xlink:href="#ArialMT-37-3"
+             id="use5755-9"
+             y="0"
+             width="100%"
+             height="100%" />
         </g>
+      </g>
+      <g
+         transform="translate(77.16148,181.2638)"
+         style="stroke-linecap:butt;stroke-linejoin:round"
+         id="text_230-3">
+        <!-- 39% -->
         <g
-           transform="translate(77.16148,181.2638)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="patch_303-4">
-          <path
-             d="m 2886.777,2153.8853 c -7.2911,14.6513 -11.0234,30.8183 -10.8923,47.183 0.131,16.3647 4.1217,32.4699 11.6465,47.0025 l 92.3841,-47.8355 z"
-             style="fill:#ffd92f;stroke:#000000;stroke-linejoin:miter"
-             id="path5657" />
-        </g>
-        <g
-           transform="translate(77.16148,181.2638)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="patch_304-0">
-          <path
-             d="m 2887.5312,2248.0708 c 1.5325,2.9597 3.2063,5.8439 5.0156,8.6429 1.8093,2.7989 3.7521,5.5093 5.8217,8.1217 l 81.5468,-64.6001 z"
-             style="fill:#e5c494;stroke:#000000;stroke-linejoin:miter"
-             id="path5660" />
-        </g>
-        <g
-           transform="translate(77.16148,181.2638)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="patch_305-5">
-          <path
-             d="m 2898.3685,2264.8354 c 13.4105,16.9286 31.7654,29.2684 52.5036,35.2976 20.7381,6.0291 42.8478,5.4536 63.2442,-1.6463 20.3964,-7.0999 38.0844,-20.3779 50.5961,-37.9812 12.5117,-17.6034 19.2368,-38.6734 19.2368,-60.2702 h -104.0339 z"
-             style="fill:#b3b3b3;stroke:#000000;stroke-linejoin:miter"
-             id="path5663" />
-        </g>
-        <g
-           transform="translate(78.66148,187.2638)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="text_224-7">
-          <!-- 9% -->
-          <g
-             transform="matrix(0.3,0,0,-0.3,3027.8294,2186.5433)"
-             id="g5723">
-            <use
-               xlink:href="#ArialMT-57"
-               id="use5719-3"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="55.615234"
-               xlink:href="#ArialMT-37-3"
-               id="use5721-4"
-               y="0"
-               width="100%"
-               height="100%" />
-          </g>
-        </g>
-        <g
-           transform="translate(80.16148,181.2638)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="text_225-3">
-          <!-- 12% -->
-          <g
-             transform="matrix(0.3,0,0,-0.3,2989.1838,2146.6751)"
-             id="g5732">
-            <use
-               xlink:href="#ArialMT-49"
-               id="use5726"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="55.615234"
-               xlink:href="#ArialMT-50"
-               id="use5728"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="111.23047"
-               xlink:href="#ArialMT-37-3"
-               id="use5730"
-               y="0"
-               width="100%"
-               height="100%" />
-          </g>
-        </g>
-        <g
-           transform="translate(77.16148,187.2638)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="text_227-7">
-          <!-- 16% -->
-          <g
-             transform="matrix(0.3,0,0,-0.3,2910.1148,2146.9916)"
-             id="g5748">
-            <use
-               xlink:href="#ArialMT-49"
-               id="use5742"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="55.615234"
-               xlink:href="#ArialMT-54"
-               id="use5744"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="111.23047"
-               xlink:href="#ArialMT-37-3"
-               id="use5746"
-               y="0"
-               width="100%"
-               height="100%" />
-          </g>
-        </g>
-        <g
-           transform="translate(80.16148,181.2638)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="text_228-5">
-          <!-- 14% -->
-          <g
-             transform="matrix(0.3,0,0,-0.3,2877.0728,2208.5739)"
-             id="g5757">
-            <use
-               xlink:href="#ArialMT-49"
-               id="use5751"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="55.615234"
-               xlink:href="#ArialMT-52"
-               id="use5753"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="111.23047"
-               xlink:href="#ArialMT-37-3"
-               id="use5755-9"
-               y="0"
-               width="100%"
-               height="100%" />
-          </g>
-        </g>
-        <g
-           transform="translate(77.16148,181.2638)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="text_230-3">
-          <!-- 39% -->
-          <g
-             transform="matrix(0.3,0,0,-0.3,2973.8349,2276.7668)"
-             id="g5773">
-            <use
-               xlink:href="#ArialMT-51"
-               id="use5767"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="55.615234"
-               xlink:href="#ArialMT-57"
-               id="use5769"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="111.23047"
-               xlink:href="#ArialMT-37-3"
-               id="use5771-2"
-               y="0"
-               width="100%"
-               height="100%" />
-          </g>
+           transform="matrix(0.3,0,0,-0.3,2973.8349,2276.7668)"
+           id="g5773">
+          <use
+             xlink:href="#ArialMT-51"
+             id="use5767"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="55.615234"
+             xlink:href="#ArialMT-57"
+             id="use5769"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="111.23047"
+             xlink:href="#ArialMT-37-3"
+             id="use5771-2"
+             y="0"
+             width="100%"
+             height="100%" />
         </g>
       </g>
       <g
@@ -5275,7 +5914,7 @@
       </g>
       <g
          id="patch_118-9"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282002)"
          transform="translate(78.21181,113.4624)">
         <path
            id="path2523"
@@ -5284,7 +5923,7 @@
       </g>
       <g
          id="patch_119-5"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282006)"
          transform="translate(78.21181,113.4624)">
         <path
            id="path2526"
@@ -5302,7 +5941,7 @@
       </g>
       <g
          id="patch_121-2"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282010)"
          transform="translate(78.21181,113.4624)">
         <path
            id="path2532"
@@ -5311,7 +5950,7 @@
       </g>
       <g
          id="patch_122-8"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282014)"
          transform="translate(78.21181,113.4624)">
         <path
            id="path2535"
@@ -5320,7 +5959,7 @@
       </g>
       <g
          id="patch_123-5"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter281998)"
          transform="translate(78.21181,113.4624)">
         <path
            id="path2538"
@@ -5329,7 +5968,7 @@
       </g>
       <g
          id="patch_124-9"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter281994)"
          transform="translate(78.21181,113.4624)">
         <path
            id="path2541"
@@ -5338,7 +5977,7 @@
       </g>
       <g
          id="patch_125-4"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter281990)"
          transform="translate(78.21181,113.4624)">
         <path
            id="path2544"
@@ -5786,7 +6425,7 @@
       </g>
       <g
          id="patch_88-6"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter281962)"
          transform="translate(77.27068,114.8319)">
         <path
            id="path1922"
@@ -5795,7 +6434,7 @@
       </g>
       <g
          id="patch_89-6"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter281958)"
          transform="translate(77.27068,114.8319)">
         <path
            id="path1925"
@@ -5804,7 +6443,7 @@
       </g>
       <g
          id="patch_90-7"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter281954)"
          transform="translate(77.27068,114.8319)">
         <path
            id="path1928"
@@ -5813,7 +6452,7 @@
       </g>
       <g
          id="patch_91-8"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter281986)"
          transform="translate(77.27068,114.8319)">
         <path
            id="path1931"
@@ -5822,7 +6461,7 @@
       </g>
       <g
          id="patch_92-4"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter281982)"
          transform="translate(77.27068,114.8319)">
         <path
            id="path1934"
@@ -5831,7 +6470,7 @@
       </g>
       <g
          id="patch_93-1"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter281978)"
          transform="translate(77.27068,114.8319)">
         <path
            id="path1937"
@@ -5840,7 +6479,7 @@
       </g>
       <g
          id="patch_94-7"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter281974)"
          transform="translate(77.27068,114.8319)">
         <path
            id="path1940"
@@ -5849,7 +6488,7 @@
       </g>
       <g
          id="patch_95-1"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter281966)"
          transform="translate(77.27068,114.8319)">
         <path
            id="path1943"
@@ -5858,7 +6497,7 @@
       </g>
       <g
          id="patch_96-8"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter281970)"
          transform="translate(77.27068,114.8319)">
         <path
            id="path1946"
@@ -6367,7 +7006,7 @@
       </g>
       <g
          id="patch_68-0"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter281918)"
          transform="translate(77.98882,113.4075)">
         <path
            id="path1670-4"
@@ -6376,7 +7015,7 @@
       </g>
       <g
          id="patch_69-6"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter281910)"
          transform="translate(77.98882,113.4075)">
         <path
            id="path1673-0"
@@ -6385,7 +7024,7 @@
       </g>
       <g
          id="patch_70-3"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter281914)"
          transform="translate(77.98882,113.4075)">
         <path
            id="path1676-2"
@@ -6394,7 +7033,7 @@
       </g>
       <g
          id="patch_71-6"
-         style="stroke-linecap:butt;stroke-linejoin:round"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter281934)"
          transform="translate(77.98882,113.4075)">
         <path
            id="path1679-9"
@@ -14721,104 +15360,6 @@
           </g>
         </g>
       </g>
-      <text
-         xml:space="preserve"
-         style="font-weight:bold;font-size:20px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-         x="673.5899"
-         y="1248.6134"
-         id="text17302"
-         inkscape:export-xdpi="399"
-         inkscape:export-ydpi="399"><tspan
-           sodipodi:role="line"
-           id="tspan17300"
-           x="673.5899"
-           y="1248.6134"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75">AGE</tspan></text>
-      <text
-         id="text17306"
-         y="1248.6134"
-         x="673.5899"
-         style="font-weight:bold;font-size:20px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-         xml:space="preserve"
-         inkscape:export-xdpi="399"
-         inkscape:export-ydpi="399"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75"
-           y="1248.6134"
-           x="673.5899"
-           id="tspan17304"
-           sodipodi:role="line">AGE</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-weight:bold;font-size:20px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-         x="1356.6877"
-         y="1247.7974"
-         id="text17306-5"
-         inkscape:export-xdpi="399"
-         inkscape:export-ydpi="399"><tspan
-           sodipodi:role="line"
-           id="tspan17304-1"
-           x="1356.6877"
-           y="1247.7974"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.75">PARTY </tspan><tspan
-           sodipodi:role="line"
-           x="1356.6877"
-           y="1307.7974"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.75"
-           id="tspan17326">AFFILIATION</tspan></text>
-      <text
-         id="text17306-5-9"
-         y="1248.6134"
-         x="1930.9382"
-         style="font-weight:bold;font-size:20px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-         xml:space="preserve"
-         inkscape:export-xdpi="399"
-         inkscape:export-ydpi="399"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.75"
-           y="1248.6134"
-           x="1930.9382"
-           id="tspan17304-1-9"
-           sodipodi:role="line">HIGHEST</tspan><tspan
-           id="tspan17326-5"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.75"
-           y="1308.6134"
-           x="1930.9382"
-           sodipodi:role="line">EDUCATION</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-weight:bold;font-size:20px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-         x="2479.4265"
-         y="1248.6134"
-         id="text17306-5-9-2"
-         inkscape:export-xdpi="399"
-         inkscape:export-ydpi="399"><tspan
-           sodipodi:role="line"
-           x="2479.4265"
-           y="1248.6134"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.75"
-           id="tspan17326-5-0">RACE/</tspan><tspan
-           sodipodi:role="line"
-           x="2479.4265"
-           y="1308.6134"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.75"
-           id="tspan17372">ETHNICITY</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-weight:bold;font-size:20px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-         x="3054.5188"
-         y="1247.7974"
-         id="text17306-5-9-4"
-         inkscape:export-xdpi="399"
-         inkscape:export-ydpi="399"><tspan
-           sodipodi:role="line"
-           x="3054.5188"
-           y="1247.7974"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.75"
-           id="tspan17326-5-9">WEEKLY </tspan><tspan
-           sodipodi:role="line"
-           x="3054.5188"
-           y="1307.7974"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.75"
-           id="tspan17386">INCOME</tspan></text>
       <g
          id="g19618"
          transform="translate(6.8261617,47.763755)"
@@ -16125,26 +16666,77 @@
         </g>
         <text
            id="text17306-2"
-           y="333.23199"
-           x="724.43341"
-           style="font-weight:bold;font-size:20px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+           y="333.03464"
+           x="566.73608"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
            xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75"
-             y="333.23199"
-             x="724.43341"
-             id="tspan17304-12"
-             sodipodi:role="line">SAMPLE COUNTS</tspan></text>
+             sodipodi:role="line"
+             id="tspan278108"
+             x="566.73608"
+             y="333.03464">Sample Wave Completion Counts</tspan></text>
+        <text
+           id="text17306-2-4"
+           y="1197.118"
+           x="672.35522"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+           xml:space="preserve"><tspan
+             sodipodi:role="line"
+             id="tspan278108-9"
+             x="672.35522"
+             y="1197.118">Age</tspan></text>
+        <text
+           id="text17306-2-4-7"
+           y="1197.118"
+           x="1249.2216"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+           xml:space="preserve"><tspan
+             sodipodi:role="line"
+             id="tspan278108-9-8"
+             x="1249.2216"
+             y="1197.118"> Political </tspan><tspan
+             sodipodi:role="line"
+             x="1249.2216"
+             y="1257.118"
+             id="tspan278176">Affiliation</tspan></text>
+        <text
+           id="text17306-2-4-7-5"
+           y="1197.2352"
+           x="1807.062"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+           xml:space="preserve"><tspan
+             sodipodi:role="line"
+             id="tspan278108-9-8-4"
+             x="1807.062"
+             y="1197.2352">  Highest</tspan><tspan
+             sodipodi:role="line"
+             x="1807.062"
+             y="1257.2352"
+             id="tspan278176-5">Education</tspan></text>
+        <text
+           id="text17306-2-4-7-5-6"
+           y="1197.118"
+           x="2391.9043"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+           xml:space="preserve"><tspan
+             sodipodi:role="line"
+             id="tspan278108-9-8-4-1"
+             x="2391.9043"
+             y="1197.118">  Race/</tspan><tspan
+             sodipodi:role="line"
+             x="2391.9043"
+             y="1257.118"
+             id="tspan278176-5-1">Ethnicity</tspan></text>
       </g>
       <text
          id="text17306-2-1"
-         y="380.99576"
+         y="380.5192"
          x="1648.7253"
          style="font-weight:bold;font-size:20px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
          xml:space="preserve"
          inkscape:export-xdpi="399"
          inkscape:export-ydpi="399"><tspan
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75"
-           y="380.99576"
+           y="380.5192"
            x="1648.7253"
            id="tspan17304-12-5"
            sodipodi:role="line">STAI trait</tspan></text>
@@ -16152,43 +16744,42 @@
          xml:space="preserve"
          style="font-weight:bold;font-size:20px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
          x="2002.7809"
-         y="381.76376"
+         y="379.70322"
          id="text17306-2-1-2"
          inkscape:export-xdpi="399"
          inkscape:export-ydpi="399"><tspan
            sodipodi:role="line"
            id="tspan17304-12-5-4"
            x="2002.7809"
-           y="381.76376"
+           y="379.70322"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75">BDI-II</tspan></text>
       <text
          id="text17306-2-1-5-4"
          y="347.33871"
-         x="-1729.2217"
+         x="-1703.7217"
          style="font-weight:bold;font-size:56px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
          xml:space="preserve"
          transform="rotate(-90)"
          inkscape:export-xdpi="399"
          inkscape:export-ydpi="399"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75"
-           y="347.33871"
-           x="-1729.2217"
-           id="tspan17304-12-5-7-2"
-           sodipodi:role="line">EXCLUDED</tspan></text>
+           sodipodi:role="line"
+           id="tspan281904"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56px;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+           x="-1703.7217"
+           y="347.33871">Excluded</tspan></text>
       <text
          transform="rotate(-90)"
          xml:space="preserve"
-         style="font-weight:bold;font-size:56px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
-         x="-2462.0168"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+         x="-2508.5168"
          y="347.33871"
          id="text17306-2-1-5-4-6"
          inkscape:export-xdpi="399"
          inkscape:export-ydpi="399"><tspan
            sodipodi:role="line"
-           id="tspan17304-12-5-7-2-1"
-           x="-2462.0168"
-           y="347.33871"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75">LOW COMPLETION</tspan></text>
+           id="tspan281906"
+           x="-2508.5168"
+           y="347.33871">Low Completion</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
@@ -18878,206 +19469,203 @@
         </g>
       </g>
       <g
-         id="g27541">
+         transform="translate(77.16188,182.2083)"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282239)"
+         id="patch_245-6">
+        <path
+           d="m 1920.9286,2129.1164 c -17.463,-18.644 -41.1955,-30.2183 -66.6386,-32.4994 -25.4431,-2.2811 -50.8561,4.887 -71.357,20.1273 l 62.067,83.491 z"
+           style="fill:#bebada;stroke:#000000;stroke-linejoin:miter"
+           id="path4492-1" />
+      </g>
+      <g
+         transform="translate(77.16188,182.2083)"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282235)"
+         id="patch_246-2">
+        <path
+           d="m 1782.933,2116.7443 c -9.5313,7.0856 -17.7793,15.7513 -24.3858,25.6207 -6.6064,9.8695 -11.4744,20.7977 -14.3923,32.3102 L 1845,2200.2353 Z"
+           style="fill:#80b1d3;stroke:#000000;stroke-linejoin:miter"
+           id="path4495-0" />
+      </g>
+      <g
+         transform="translate(77.16188,182.2083)"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282231)"
+         id="patch_247-4">
+        <path
+           d="m 1744.1549,2174.6752 c -4.471,17.6399 -4.2363,36.1479 0.6805,53.6688 4.9167,17.5208 14.3457,33.4487 27.3415,46.187 12.9958,12.7382 29.1093,21.8464 46.725,26.4115 17.6158,4.5651 36.1248,4.4292 53.6717,-0.3939 L 1845,2200.2353 Z"
+           style="fill:#fdb462;stroke:#000000;stroke-linejoin:miter"
+           id="path4498-4" />
+      </g>
+      <g
+         transform="translate(77.16188,182.2083)"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282227)"
+         id="patch_248-5">
+        <path
+           d="m 1872.5736,2300.5486 c 3.4815,-0.957 6.9109,-2.0946 10.2742,-3.4082 3.3632,-1.3136 6.6558,-2.8014 9.8644,-4.4573 L 1845,2200.2353 Z"
+           style="fill:#b3de69;stroke:#000000;stroke-linejoin:miter"
+           id="path4501-9" />
+      </g>
+      <g
+         transform="translate(77.16188,182.2083)"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282223)"
+         id="patch_249-7">
+        <path
+           d="m 1892.7122,2292.6831 c 13.3766,-6.9036 25.0968,-16.629 34.3492,-28.5027 9.2524,-11.8737 15.8185,-25.6154 19.2436,-40.2735 L 1845,2200.2353 Z"
+           style="fill:#d9d9d9;stroke:#000000;stroke-linejoin:miter"
+           id="path4504-5" />
+      </g>
+      <g
+         transform="translate(78.34178,190.9592)"
+         style="stroke-linecap:butt;stroke-linejoin:round"
+         id="text_169-5">
+        <!-- 11% -->
         <g
-           transform="translate(77.16188,182.2083)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="patch_245-6">
-          <path
-             d="m 1920.9286,2129.1164 c -17.463,-18.644 -41.1955,-30.2183 -66.6386,-32.4994 -25.4431,-2.2811 -50.8561,4.887 -71.357,20.1273 l 62.067,83.491 z"
-             style="fill:#bebada;stroke:#000000;stroke-linejoin:miter"
-             id="path4492-1" />
+           transform="matrix(0.3,0,0,-0.3,1883.0737,2179.428)"
+           id="g4605">
+          <use
+             xlink:href="#ArialMT-49"
+             id="use4599-9"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="48.240234"
+             xlink:href="#ArialMT-49"
+             id="use4601-0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="103.85547"
+             xlink:href="#ArialMT-37-3"
+             id="use4603-9"
+             y="0"
+             width="100%"
+             height="100%" />
         </g>
+      </g>
+      <g
+         transform="translate(75.512594,190.10971)"
+         style="stroke-linecap:butt;stroke-linejoin:round"
+         id="text_171-4">
+        <!-- 10% -->
         <g
-           transform="translate(77.16188,182.2083)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="patch_246-2">
-          <path
-             d="m 1782.933,2116.7443 c -9.5313,7.0856 -17.7793,15.7513 -24.3858,25.6207 -6.6064,9.8695 -11.4744,20.7977 -14.3923,32.3102 L 1845,2200.2353 Z"
-             style="fill:#80b1d3;stroke:#000000;stroke-linejoin:miter"
-             id="path4495-0" />
+           transform="matrix(0.3,0,0,-0.3,1754.462,2167.4816)"
+           id="g4623">
+          <use
+             xlink:href="#ArialMT-49"
+             id="use4617"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="55.615234"
+             xlink:href="#ArialMT-48"
+             id="use4619"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="111.23047"
+             xlink:href="#ArialMT-37-3"
+             id="use4621"
+             y="0"
+             width="100%"
+             height="100%" />
         </g>
+      </g>
+      <g
+         transform="translate(86.373771,169.34935)"
+         style="stroke-linecap:butt;stroke-linejoin:round"
+         id="text_172-0">
+        <!-- 33% -->
         <g
-           transform="translate(77.16188,182.2083)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="patch_247-4">
-          <path
-             d="m 1744.1549,2174.6752 c -4.471,17.6399 -4.2363,36.1479 0.6805,53.6688 4.9167,17.5208 14.3457,33.4487 27.3415,46.187 12.9958,12.7382 29.1093,21.8464 46.725,26.4115 17.6158,4.5651 36.1248,4.4292 53.6717,-0.3939 L 1845,2200.2353 Z"
-             style="fill:#fdb462;stroke:#000000;stroke-linejoin:miter"
-             id="path4498-4" />
+           transform="matrix(0.3,0,0,-0.3,1764.0027,2259.9977)"
+           id="g4632">
+          <use
+             xlink:href="#ArialMT-51"
+             id="use4626"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="55.615234"
+             xlink:href="#ArialMT-51"
+             id="use4628"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="111.23047"
+             xlink:href="#ArialMT-37-3"
+             id="use4630"
+             y="0"
+             width="100%"
+             height="100%" />
         </g>
+      </g>
+      <g
+         transform="translate(74.284496,178.48589)"
+         style="stroke-linecap:butt;stroke-linejoin:round"
+         id="text_174-5">
+        <!-- 13% -->
         <g
-           transform="translate(77.16188,182.2083)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="patch_248-5">
-          <path
-             d="m 1872.5736,2300.5486 c 3.4815,-0.957 6.9109,-2.0946 10.2742,-3.4082 3.3632,-1.3136 6.6558,-2.8014 9.8644,-4.4573 L 1845,2200.2353 Z"
-             style="fill:#b3de69;stroke:#000000;stroke-linejoin:miter"
-             id="path4501-9" />
+           transform="matrix(0.3,0,0,-0.3,1872.4219,2252.7523)"
+           id="g4648">
+          <use
+             xlink:href="#ArialMT-49"
+             id="use4642"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="55.615234"
+             xlink:href="#ArialMT-51"
+             id="use4644"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="111.23047"
+             xlink:href="#ArialMT-37-3"
+             id="use4646"
+             y="0"
+             width="100%"
+             height="100%" />
         </g>
+      </g>
+      <g
+         transform="translate(77.59568,187.18878)"
+         style="stroke-linecap:butt;stroke-linejoin:round"
+         id="text_170-3">
+        <!-- 23% -->
         <g
-           transform="translate(77.16188,182.2083)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="patch_249-7">
-          <path
-             d="m 1892.7122,2292.6831 c 13.3766,-6.9036 25.0968,-16.629 34.3492,-28.5027 9.2524,-11.8737 15.8185,-25.6154 19.2436,-40.2735 L 1845,2200.2353 Z"
-             style="fill:#d9d9d9;stroke:#000000;stroke-linejoin:miter"
-             id="path4504-5" />
-        </g>
-        <g
-           transform="translate(78.34178,190.9592)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="text_169-5">
-          <!-- 11% -->
-          <g
-             transform="matrix(0.3,0,0,-0.3,1883.0737,2179.428)"
-             id="g4605">
-            <use
-               xlink:href="#ArialMT-49"
-               id="use4599-9"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="48.240234"
-               xlink:href="#ArialMT-49"
-               id="use4601-0"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="103.85547"
-               xlink:href="#ArialMT-37-3"
-               id="use4603-9"
-               y="0"
-               width="100%"
-               height="100%" />
-          </g>
-        </g>
-        <g
-           transform="translate(75.512594,190.10971)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="text_171-4">
-          <!-- 10% -->
-          <g
-             transform="matrix(0.3,0,0,-0.3,1754.462,2167.4816)"
-             id="g4623">
-            <use
-               xlink:href="#ArialMT-49"
-               id="use4617"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="55.615234"
-               xlink:href="#ArialMT-48"
-               id="use4619"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="111.23047"
-               xlink:href="#ArialMT-37-3"
-               id="use4621"
-               y="0"
-               width="100%"
-               height="100%" />
-          </g>
-        </g>
-        <g
-           transform="translate(86.373771,169.34935)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="text_172-0">
-          <!-- 33% -->
-          <g
-             transform="matrix(0.3,0,0,-0.3,1764.0027,2259.9977)"
-             id="g4632">
-            <use
-               xlink:href="#ArialMT-51"
-               id="use4626"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="55.615234"
-               xlink:href="#ArialMT-51"
-               id="use4628"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="111.23047"
-               xlink:href="#ArialMT-37-3"
-               id="use4630"
-               y="0"
-               width="100%"
-               height="100%" />
-          </g>
-        </g>
-        <g
-           transform="translate(74.284496,178.48589)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="text_174-5">
-          <!-- 13% -->
-          <g
-             transform="matrix(0.3,0,0,-0.3,1872.4219,2252.7523)"
-             id="g4648">
-            <use
-               xlink:href="#ArialMT-49"
-               id="use4642"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="55.615234"
-               xlink:href="#ArialMT-51"
-               id="use4644"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="111.23047"
-               xlink:href="#ArialMT-37-3"
-               id="use4646"
-               y="0"
-               width="100%"
-               height="100%" />
-          </g>
-        </g>
-        <g
-           transform="translate(77.59568,187.18878)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="text_170-3">
-          <!-- 23% -->
-          <g
-             transform="matrix(0.3,0,0,-0.3,1821.4819,2135.458)"
-             id="g4614">
-            <use
-               xlink:href="#ArialMT-50"
-               id="use4608"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="55.615234"
-               xlink:href="#ArialMT-51"
-               id="use4610"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="111.23047"
-               xlink:href="#ArialMT-37-3"
-               id="use4612"
-               y="0"
-               width="100%"
-               height="100%" />
-          </g>
+           transform="matrix(0.3,0,0,-0.3,1821.4819,2135.458)"
+           id="g4614">
+          <use
+             xlink:href="#ArialMT-50"
+             id="use4608"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="55.615234"
+             xlink:href="#ArialMT-51"
+             id="use4610"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="111.23047"
+             xlink:href="#ArialMT-37-3"
+             id="use4612"
+             y="0"
+             width="100%"
+             height="100%" />
         </g>
       </g>
       <g
@@ -19181,223 +19769,220 @@
          d="m 3060.1547,1454.8129 2.6925,-22.772"
          id="path27145" />
       <g
-         id="g27440">
-        <g
-           transform="translate(77.16148,113.7637)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="patch_143-9">
-          <path
-             d="m 3083.9492,1432.8 c 0,-10.3861 -1.5554,-20.7138 -4.6142,-30.6393 -3.0588,-9.9254 -7.5868,-19.337 -13.4331,-27.9214 l -85.9866,58.5607 z"
-             style="fill:#66c2a5;stroke:#000000;stroke-linejoin:miter"
-             id="path3110" />
-        </g>
-        <g
-           transform="translate(77.16148,113.7637)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="patch_144-3">
-          <path
-             d="m 3065.9019,1374.2393 c -7.894,-11.591 -18.0508,-21.4671 -29.8585,-29.0332 -11.8077,-7.5661 -25.0243,-12.6671 -38.8534,-14.9957 L 2979.9153,1432.8 Z"
-             style="fill:#fc8d62;stroke:#000000;stroke-linejoin:miter"
-             id="path3113" />
-        </g>
-        <g
-           transform="translate(77.16148,113.7637)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="patch_145-7">
-          <path
-             d="m 2997.19,1330.2104 c -3.6519,-0.615 -7.334,-1.0345 -11.0306,-1.2567 -3.6967,-0.2223 -7.4025,-0.247 -11.1018,-0.074 l 4.8577,103.9204 z"
-             style="fill:#8da0cb;stroke:#000000;stroke-linejoin:miter"
-             id="path3116" />
-        </g>
-        <g
-           transform="translate(77.16148,113.7637)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="patch_146-5">
-          <path
-             d="m 2975.0576,1328.8796 c -18.507,0.8651 -36.4512,6.6585 -51.9701,16.7788 -15.5188,10.1203 -28.0561,24.2048 -36.3105,40.7916 l 93.1383,46.35 z"
-             style="fill:#a6d854;stroke:#000000;stroke-linejoin:miter"
-             id="path3119" />
-        </g>
-        <g
-           transform="translate(77.16148,113.7637)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="patch_147-7">
-          <path
-             d="m 2886.777,1386.45 c -7.2911,14.6513 -11.0234,30.8183 -10.8923,47.183 0.131,16.3647 4.1217,32.4699 11.6465,47.0026 l 92.3841,-47.8356 z"
-             style="fill:#ffd92f;stroke:#000000;stroke-linejoin:miter"
-             id="path3122" />
-        </g>
-        <g
-           transform="translate(77.16148,113.7637)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="patch_148-2">
-          <path
-             d="m 2887.5312,1480.6356 c 1.5325,2.9596 3.2063,5.8438 5.0156,8.6428 1.8093,2.7989 3.7521,5.5093 5.8217,8.1217 l 81.5468,-64.6001 z"
-             style="fill:#e5c494;stroke:#000000;stroke-linejoin:miter"
-             id="path3125" />
-        </g>
-        <g
-           transform="translate(77.16148,113.7637)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="patch_149-9">
-          <path
-             d="m 2898.3685,1497.4001 c 13.4105,16.9286 31.7654,29.2684 52.5036,35.2976 20.7381,6.0292 42.8478,5.4536 63.2442,-1.6463 20.3964,-7.0999 38.0844,-20.3779 50.5961,-37.9812 12.5117,-17.6034 19.2368,-38.6734 19.2368,-60.2702 h -104.0339 z"
-             style="fill:#b3b3b3;stroke:#000000;stroke-linejoin:miter"
-             id="path3128" />
-        </g>
-        <g
-           transform="translate(80.16148,119.7637)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="text_105-8">
-          <!-- 9% -->
-          <g
-             transform="matrix(0.3,0,0,-0.3,3027.8294,1419.108)"
-             id="g3192">
-            <use
-               xlink:href="#ArialMT-57"
-               id="use3188"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="55.615234"
-               xlink:href="#ArialMT-37-3"
-               id="use3190"
-               y="0"
-               width="100%"
-               height="100%" />
-          </g>
-        </g>
-        <g
-           transform="translate(78.66148,119.7637)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="text_106-5">
-          <!-- 12% -->
-          <g
-             transform="matrix(0.3,0,0,-0.3,2989.1838,1379.2398)"
-             id="g3201">
-            <use
-               xlink:href="#ArialMT-49"
-               id="use3195"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="55.615234"
-               xlink:href="#ArialMT-50"
-               id="use3197"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="111.23047"
-               xlink:href="#ArialMT-37-3"
-               id="use3199"
-               y="0"
-               width="100%"
-               height="100%" />
-          </g>
-        </g>
-        <g
-           transform="translate(77.16148,113.7637)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="text_108-5">
-          <!-- 16% -->
-          <g
-             transform="matrix(0.3,0,0,-0.3,2910.1148,1379.5563)"
-             id="g3217">
-            <use
-               xlink:href="#ArialMT-49"
-               id="use3211"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="55.615234"
-               xlink:href="#ArialMT-54"
-               id="use3213"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="111.23047"
-               xlink:href="#ArialMT-37-3"
-               id="use3215"
-               y="0"
-               width="100%"
-               height="100%" />
-          </g>
-        </g>
-        <g
-           transform="translate(80.16148,113.7637)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="text_109-4">
-          <!-- 14% -->
-          <g
-             transform="matrix(0.3,0,0,-0.3,2877.0728,1441.1386)"
-             id="g3226">
-            <use
-               xlink:href="#ArialMT-49"
-               id="use3220"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="55.615234"
-               xlink:href="#ArialMT-52"
-               id="use3222"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="111.23047"
-               xlink:href="#ArialMT-37-3"
-               id="use3224"
-               y="0"
-               width="100%"
-               height="100%" />
-          </g>
-        </g>
-        <g
-           transform="translate(77.16148,113.7637)"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="text_111-1">
-          <!-- 39% -->
-          <g
-             transform="matrix(0.3,0,0,-0.3,2973.8349,1509.3315)"
-             id="g3242">
-            <use
-               xlink:href="#ArialMT-51"
-               id="use3236"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="55.615234"
-               xlink:href="#ArialMT-57"
-               id="use3238"
-               y="0"
-               width="100%"
-               height="100%" />
-            <use
-               x="111.23047"
-               xlink:href="#ArialMT-37-3"
-               id="use3240"
-               y="0"
-               width="100%"
-               height="100%" />
-          </g>
-        </g>
+         transform="translate(77.16148,113.7637)"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282089)"
+         id="patch_143-9">
         <path
-           id="path27147"
-           d="m 2974.0724,1599.7573 -14.3667,6.9892"
-           style="fill:none;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+           d="m 3083.9492,1432.8 c 0,-10.3861 -1.5554,-20.7138 -4.6142,-30.6393 -3.0588,-9.9254 -7.5868,-19.337 -13.4331,-27.9214 l -85.9866,58.5607 z"
+           style="fill:#66c2a5;stroke:#000000;stroke-linejoin:miter"
+           id="path3110" />
       </g>
+      <g
+         transform="translate(77.16148,113.7637)"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282085)"
+         id="patch_144-3">
+        <path
+           d="m 3065.9019,1374.2393 c -7.894,-11.591 -18.0508,-21.4671 -29.8585,-29.0332 -11.8077,-7.5661 -25.0243,-12.6671 -38.8534,-14.9957 L 2979.9153,1432.8 Z"
+           style="fill:#fc8d62;stroke:#000000;stroke-linejoin:miter"
+           id="path3113" />
+      </g>
+      <g
+         transform="translate(77.16148,113.7637)"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282081)"
+         id="patch_145-7">
+        <path
+           d="m 2997.19,1330.2104 c -3.6519,-0.615 -7.334,-1.0345 -11.0306,-1.2567 -3.6967,-0.2223 -7.4025,-0.247 -11.1018,-0.074 l 4.8577,103.9204 z"
+           style="fill:#8da0cb;stroke:#000000;stroke-linejoin:miter"
+           id="path3116" />
+      </g>
+      <g
+         transform="translate(77.16148,113.7637)"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282077)"
+         id="patch_146-5">
+        <path
+           d="m 2975.0576,1328.8796 c -18.507,0.8651 -36.4512,6.6585 -51.9701,16.7788 -15.5188,10.1203 -28.0561,24.2048 -36.3105,40.7916 l 93.1383,46.35 z"
+           style="fill:#a6d854;stroke:#000000;stroke-linejoin:miter"
+           id="path3119" />
+      </g>
+      <g
+         transform="translate(77.16148,113.7637)"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282073)"
+         id="patch_147-7">
+        <path
+           d="m 2886.777,1386.45 c -7.2911,14.6513 -11.0234,30.8183 -10.8923,47.183 0.131,16.3647 4.1217,32.4699 11.6465,47.0026 l 92.3841,-47.8356 z"
+           style="fill:#ffd92f;stroke:#000000;stroke-linejoin:miter"
+           id="path3122" />
+      </g>
+      <g
+         transform="translate(77.16148,113.7637)"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282069)"
+         id="patch_148-2">
+        <path
+           d="m 2887.5312,1480.6356 c 1.5325,2.9596 3.2063,5.8438 5.0156,8.6428 1.8093,2.7989 3.7521,5.5093 5.8217,8.1217 l 81.5468,-64.6001 z"
+           style="fill:#e5c494;stroke:#000000;stroke-linejoin:miter"
+           id="path3125" />
+      </g>
+      <g
+         transform="translate(77.16148,113.7637)"
+         style="stroke-linecap:butt;stroke-linejoin:round;filter:url(#filter282065)"
+         id="patch_149-9">
+        <path
+           d="m 2898.3685,1497.4001 c 13.4105,16.9286 31.7654,29.2684 52.5036,35.2976 20.7381,6.0292 42.8478,5.4536 63.2442,-1.6463 20.3964,-7.0999 38.0844,-20.3779 50.5961,-37.9812 12.5117,-17.6034 19.2368,-38.6734 19.2368,-60.2702 h -104.0339 z"
+           style="fill:#b3b3b3;stroke:#000000;stroke-linejoin:miter"
+           id="path3128" />
+      </g>
+      <g
+         transform="translate(80.16148,119.7637)"
+         style="stroke-linecap:butt;stroke-linejoin:round"
+         id="text_105-8">
+        <!-- 9% -->
+        <g
+           transform="matrix(0.3,0,0,-0.3,3027.8294,1419.108)"
+           id="g3192">
+          <use
+             xlink:href="#ArialMT-57"
+             id="use3188"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="55.615234"
+             xlink:href="#ArialMT-37-3"
+             id="use3190"
+             y="0"
+             width="100%"
+             height="100%" />
+        </g>
+      </g>
+      <g
+         transform="translate(78.66148,119.7637)"
+         style="stroke-linecap:butt;stroke-linejoin:round"
+         id="text_106-5">
+        <!-- 12% -->
+        <g
+           transform="matrix(0.3,0,0,-0.3,2989.1838,1379.2398)"
+           id="g3201">
+          <use
+             xlink:href="#ArialMT-49"
+             id="use3195"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="55.615234"
+             xlink:href="#ArialMT-50"
+             id="use3197"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="111.23047"
+             xlink:href="#ArialMT-37-3"
+             id="use3199"
+             y="0"
+             width="100%"
+             height="100%" />
+        </g>
+      </g>
+      <g
+         transform="translate(77.16148,113.7637)"
+         style="stroke-linecap:butt;stroke-linejoin:round"
+         id="text_108-5">
+        <!-- 16% -->
+        <g
+           transform="matrix(0.3,0,0,-0.3,2910.1148,1379.5563)"
+           id="g3217">
+          <use
+             xlink:href="#ArialMT-49"
+             id="use3211"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="55.615234"
+             xlink:href="#ArialMT-54"
+             id="use3213"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="111.23047"
+             xlink:href="#ArialMT-37-3"
+             id="use3215"
+             y="0"
+             width="100%"
+             height="100%" />
+        </g>
+      </g>
+      <g
+         transform="translate(80.16148,113.7637)"
+         style="stroke-linecap:butt;stroke-linejoin:round"
+         id="text_109-4">
+        <!-- 14% -->
+        <g
+           transform="matrix(0.3,0,0,-0.3,2877.0728,1441.1386)"
+           id="g3226">
+          <use
+             xlink:href="#ArialMT-49"
+             id="use3220"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="55.615234"
+             xlink:href="#ArialMT-52"
+             id="use3222"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="111.23047"
+             xlink:href="#ArialMT-37-3"
+             id="use3224"
+             y="0"
+             width="100%"
+             height="100%" />
+        </g>
+      </g>
+      <g
+         transform="translate(77.16148,113.7637)"
+         style="stroke-linecap:butt;stroke-linejoin:round"
+         id="text_111-1">
+        <!-- 39% -->
+        <g
+           transform="matrix(0.3,0,0,-0.3,2973.8349,1509.3315)"
+           id="g3242">
+          <use
+             xlink:href="#ArialMT-51"
+             id="use3236"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="55.615234"
+             xlink:href="#ArialMT-57"
+             id="use3238"
+             y="0"
+             width="100%"
+             height="100%" />
+          <use
+             x="111.23047"
+             xlink:href="#ArialMT-37-3"
+             id="use3240"
+             y="0"
+             width="100%"
+             height="100%" />
+        </g>
+      </g>
+      <path
+         id="path27147"
+         d="m 2974.0724,1599.7573 -14.3667,6.9892"
+         style="fill:none;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter282061)" />
       <g
          transform="translate(147.60328,184.33127)"
          style="stroke-linecap:butt;stroke-linejoin:round"
@@ -19730,6 +20315,20 @@
              xlink:href="#ArialMT-42-2" />
         </g>
       </g>
+      <text
+         id="text17306-2-4-7-5-66"
+         y="1244.8818"
+         x="2978.6567"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;line-height:1.25;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round"
+         xml:space="preserve"><tspan
+           sodipodi:role="line"
+           id="tspan278256"
+           x="2978.6567"
+           y="1244.8818">Weekly</tspan><tspan
+           sodipodi:role="line"
+           id="tspan278258"
+           x="2978.6567"
+           y="1304.8818">Income</tspan></text>
     </g>
   </g>
 </svg>
