@@ -1,4 +1,4 @@
-COVID-Dynamic: A Large-Scale Longitudinal Study of Socioemotional and Behavioral Change Across the Pandemic
+# COVID-Dynamic: A Large-Scale Longitudinal Study of Socioemotional and Behavioral Change Across the Pandemic
 Welcome to the GitHub repository for COVID-Dynamic, a large-scale longitudinal study that explores socioemotional and behavioral changes during the COVID-19 pandemic. 
 This repository accompanies the paper: COVID-Dynamic: A large-scale longitudinal study of socioemotional and behavioral change across the pandemic
 Published in Scientific Data (Nature), 2022
